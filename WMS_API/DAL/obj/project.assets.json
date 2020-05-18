@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "L:\\实训二\\WMS_API\\WMS_API\\DAL\\DAL.csproj",
+      "projectUniqueName": "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "L:\\实训二\\WMS_API\\WMS_API\\DAL\\DAL.csproj",
+      "projectPath": "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\吕静\\.nuget\\packages\\",
-      "outputPath": "L:\\实训二\\WMS_API\\WMS_API\\DAL\\obj\\",
+      "outputPath": "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\",

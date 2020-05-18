@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2rrQle90XPvhfLHfYJNbE7yhgRC9g77pvjh0KaT5c9glJLU2VvuFYzxSZjWZOJpCeoA0SQgrrmjnhjTP8abngQ==",
+  "dgSpecHash": "u0k1IpLyGhRINDUn85NBML3VOBpuvnrbeF0jBGsmfr3dH7+ckMqwcJNgjXFvgPAvU5aDRo3fyVWvTYEZYkMrCQ==",
   "success": true,
-  "projectFilePath": "L:\\实训二\\WMS_API\\WMS_API\\Model\\Model.csproj",
+  "projectFilePath": "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\Model\\Model.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

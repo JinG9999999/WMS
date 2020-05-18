@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "L:\\实训二\\WMS_API\\WMS_API\\WMS_API\\WMS_API.csproj": {}
+    "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\WMS_API\\WMS_API.csproj": {}
   },
   "projects": {
-    "L:\\实训二\\WMS_API\\WMS_API\\WMS_API\\WMS_API.csproj": {
+    "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\WMS_API\\WMS_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "L:\\实训二\\WMS_API\\WMS_API\\WMS_API\\WMS_API.csproj",
+        "projectUniqueName": "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\WMS_API\\WMS_API.csproj",
         "projectName": "WMS_API",
-        "projectPath": "L:\\实训二\\WMS_API\\WMS_API\\WMS_API\\WMS_API.csproj",
+        "projectPath": "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\WMS_API\\WMS_API.csproj",
         "packagesPath": "C:\\Users\\吕静\\.nuget\\packages\\",
-        "outputPath": "L:\\实训二\\WMS_API\\WMS_API\\WMS_API\\obj\\",
+        "outputPath": "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\WMS_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\",

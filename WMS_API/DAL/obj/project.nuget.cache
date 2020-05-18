@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gEB1GzTDW2zi0yddfEaqwvboFcjvtNrZl1OahHIuXle+Ti5IQksCCwjlyF0eqTeaFxou/EQMWG6Xgnyb0oqS/Q==",
+  "dgSpecHash": "p1vG3HhClSGE2Sdgtxpru1vt1TAJpfkkENBv20l0qdI/EbAJHVzTvXh5bCOGdEBUdp1HyO2/xiC6irVMJGOG4g==",
   "success": true,
-  "projectFilePath": "L:\\实训二\\WMS_API\\WMS_API\\DAL\\DAL.csproj",
+  "projectFilePath": "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\DAL\\DAL.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
