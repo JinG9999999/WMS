@@ -1,0 +1,9 @@
+L:\实训二\仓库管理系统项目---4组api\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.deps.json
+L:\实训二\仓库管理系统项目---4组api\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.dll
+L:\实训二\仓库管理系统项目---4组api\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.pdb
+L:\实训二\仓库管理系统项目---4组api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
+L:\实训二\仓库管理系统项目---4组api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
+L:\实训二\仓库管理系统项目---4组api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
+L:\实训二\仓库管理系统项目---4组api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
+L:\实训二\仓库管理系统项目---4组api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.dll
+L:\实训二\仓库管理系统项目---4组api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.pdb
