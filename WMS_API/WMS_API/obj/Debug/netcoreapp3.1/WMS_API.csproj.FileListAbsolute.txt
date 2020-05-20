@@ -125,3 +125,7 @@ L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\obj\Debug\netcor
 L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.dll
 L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.pdb
 L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.genruntimeconfig.cache
+L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\DAL.dll
+L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\Model.dll
+L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\DAL.pdb
+L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\Model.pdb
