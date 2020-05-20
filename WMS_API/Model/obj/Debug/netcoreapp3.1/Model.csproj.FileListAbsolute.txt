@@ -7,3 +7,12 @@ L:\实训二\仓库管理系统项目---4组api\WMS_API\Model\obj\Debug\netcorea
 L:\实训二\仓库管理系统项目---4组api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
 L:\实训二\仓库管理系统项目---4组api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.dll
 L:\实训二\仓库管理系统项目---4组api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.pdb
+C:\Users\DELL\Desktop\克隆api\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.deps.json
+C:\Users\DELL\Desktop\克隆api\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\DELL\Desktop\克隆api\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\DELL\Desktop\克隆api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\克隆api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\克隆api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\克隆api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
+C:\Users\DELL\Desktop\克隆api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.dll
+C:\Users\DELL\Desktop\克隆api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.pdb
