@@ -1,21 +1,11 @@
 L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
 L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\bin\Debug\netcoreapp3.1\DAL.dll
 L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
-L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
-L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
 L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
 L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
 L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.dll
 L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
-D:\大实训2  仓库管理系统\WMS API\WMS_API\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
-D:\大实训2  仓库管理系统\WMS API\WMS_API\DAL\bin\Debug\netcoreapp3.1\DAL.dll
-D:\大实训2  仓库管理系统\WMS API\WMS_API\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
-D:\大实训2  仓库管理系统\WMS API\WMS_API\DAL\bin\Debug\netcoreapp3.1\Model.dll
-D:\大实训2  仓库管理系统\WMS API\WMS_API\DAL\bin\Debug\netcoreapp3.1\Model.pdb
-D:\大实训2  仓库管理系统\WMS API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
-D:\大实训2  仓库管理系统\WMS API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
-D:\大实训2  仓库管理系统\WMS API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
-D:\大实训2  仓库管理系统\WMS API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
-D:\大实训2  仓库管理系统\WMS API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete
-D:\大实训2  仓库管理系统\WMS API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.dll
-D:\大实训2  仓库管理系统\WMS API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
+L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\bin\Debug\netcoreapp3.1\Model.dll
+L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\bin\Debug\netcoreapp3.1\Model.pdb
+L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete
