@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace WMS_API.Models
+namespace Model
 {
     public partial class SysLog
     {
