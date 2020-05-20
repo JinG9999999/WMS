@@ -9,10 +9,3 @@ L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\obj\Debug\netcoreapp
 L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\bin\Debug\netcoreapp3.1\Model.dll
 L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\bin\Debug\netcoreapp3.1\Model.pdb
 L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete
-L:\实训二\仓库管理系统项目---4组api\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
-C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
-C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
-C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
-C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
-C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.dll
-C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
