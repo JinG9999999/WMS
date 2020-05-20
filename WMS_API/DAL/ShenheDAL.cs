@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using WMS_API.Models;
+using Model;
 
 namespace DAL
 {

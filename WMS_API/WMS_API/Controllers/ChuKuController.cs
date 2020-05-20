@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using WMS_API.Models;
+using Models;
 using DAL;
 
 namespace WMS_API.Controllers
