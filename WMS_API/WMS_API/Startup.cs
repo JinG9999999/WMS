@@ -24,6 +24,11 @@ namespace WMS_API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(
+                options => options.AddPolicy
+                ("wms", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader())
+                );
+
             services.AddControllers();
         }
 
@@ -36,7 +41,7 @@ namespace WMS_API
             }
 
             app.UseRouting();
-
+            app.UseCors("wms");
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

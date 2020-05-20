@@ -129,3 +129,6 @@ L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\bin\Debug\netcor
 L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\Model.dll
 L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\DAL.pdb
 L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\Model.pdb
+L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
