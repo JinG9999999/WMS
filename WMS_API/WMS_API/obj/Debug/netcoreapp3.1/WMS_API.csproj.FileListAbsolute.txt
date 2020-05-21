@@ -132,10 +132,3 @@ L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\bin\Debug\netcor
 L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
 L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 L:\实训二\仓库管理系统项目---4组api\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.csprojAssemblyReference.cache
-C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.csproj.CoreCompileInputs.cache
-C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.AssemblyInfoInputs.cache
-C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.AssemblyInfo.cs
-C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.dll
-C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.pdb

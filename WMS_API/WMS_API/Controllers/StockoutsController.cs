@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Models;
+using Model;
 using DAL;
 
 namespace WMS_API.Controllers
@@ -16,9 +16,47 @@ namespace WMS_API.Controllers
         StockoutDAL dal = new StockoutDAL();
         // GET: api/Stockoutdetails
         [HttpGet]
-        public List<Stockout> Gets()
+        public PageStus Gets(int PageSize, Nullable<DateTime> time1, Nullable<DateTime> time2, string type = "", int state = 0, int CurrentPage=1)
         {
-            return dal.Show();
+            var list = dal.Show();
+            if (time1 != null && time2 != null)
+            {
+                list = list.Where(s => s.CreateDate >= time1 && s.CreateDate <= time2).ToList();
+            }
+            if (string.IsNullOrEmpty(type))
+            {
+                list = list.Where(s => s.StockOutType == type).ToList();
+            }
+            if (state != 0)
+            {
+                list = list.Where(s => s.StockOutStatus == state).ToList();
+            }
+            PageStus ps = new PageStus();//实例化
+
+            ps.TotalCount = list.Count();//总记录数
+
+            if (ps.TotalCount % PageSize == 0)//计算总页数
+            {
+                ps.TotalPage = ps.TotalCount / PageSize;
+            }
+            else
+            {
+                ps.TotalPage = (ps.TotalCount / PageSize) + 1;
+            }
+            //纠正index页
+            if (CurrentPage < 1)
+            {
+                CurrentPage = 1;
+            }
+            if (CurrentPage > ps.TotalPage)
+            {
+                CurrentPage = ps.TotalPage;
+            }
+            //赋值index为当前页
+            ps.CurrentPage = CurrentPage;
+            //linq查询
+            ps.stockouts = list.Skip(PageSize * (CurrentPage - 1)).Take(PageSize).ToList();
+            return ps;
         }
 
         // GET: api/Stockoutdetails/5

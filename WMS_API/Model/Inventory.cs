@@ -15,4 +15,14 @@ namespace Model
         public string ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
     }
+    public class PageStues
+    {
+        public List<Inventory> inventories { get; set; }
+
+        public int TotalCount { get; set; }//总记录数
+
+        public int TotalPage { get; set; }//总页数
+
+        public int CurrentPage { get; set; }//当前页
+    }
 }
