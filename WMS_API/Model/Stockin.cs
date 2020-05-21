@@ -9,12 +9,22 @@ namespace Model
         public string StockInType { get; set; }
         public int? SupplierId { get; set; }
         public int? OrderNo { get; set; }
-        public bool? StockInStatus { get; set; }
-        public bool? IsDel { get; set; }
+        public int? StockInStatus { get; set; }
         public string Remark { get; set; }
         public string CreateBy { get; set; }
         public DateTime? CreateDate { get; set; }
         public string ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
+    }
+    //分页
+    public class PageStu
+    {
+        public List<Stockin> stockins { get; set; }
+
+        public int TotalCount { get; set; }//总记录数
+
+        public int TotalPage { get; set; }//总页数
+
+        public int CurrentPage { get; set; }//当前页
     }
 }
