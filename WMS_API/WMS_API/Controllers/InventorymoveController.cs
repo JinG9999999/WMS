@@ -25,7 +25,7 @@ namespace WMS_API.Controllers
         }
 
         // GET: api/Inventorymove/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}", Name = "InventorymoveFind")]
         public Inventorymove InventorymoveFind(int id)
         {
             return dal.InventorymoveFind(id);
