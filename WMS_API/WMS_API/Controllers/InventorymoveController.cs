@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using DAL;
-using WMS_API.Models;
+using Model;
+using Microsoft.AspNetCore.Cors;
 
 namespace WMS_API.Controllers
 {
-    [Route("api/[controller]")]
+    [EnableCors("wms")]
+    [Route("api/[controller]/[action]")]//修改路由
     [ApiController] //显示库存移动
     public class InventorymoveController : ControllerBase
     {
@@ -17,34 +19,37 @@ namespace WMS_API.Controllers
         DeliveryDal dal = new DeliveryDal();
         // GET: api/Inventorymove
         [HttpGet]
-        public IEnumerable<Inventorymove> Get()
+        public IEnumerable<Inventorymove> InventorymoveShow()
         {
             return dal.InventorymoveShow();
         }
 
         // GET: api/Inventorymove/5
-        //[HttpGet("{id}", Name = "Get")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
+        [HttpGet("{id}", Name = "Get")]
+        public Inventorymove InventorymoveFind(int id)
+        {
+            return dal.InventorymoveFind(id);
+        }
 
         // POST: api/Inventorymove
         [HttpPost]
-        public void Post([FromBody] string value)
+        public int Post([FromBody] Inventorymove value)
         {
+           return  dal.InventorymoveAdd(value);
         }
 
         // PUT: api/Inventorymove/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public int Put([FromBody] Inventorymove value)
         {
+           return  dal.InventorymoveUpt(value) ;
         }
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public int Delete(int id)
         {
+            return dal.InventorymoveDel(id);
         }
     }
 }

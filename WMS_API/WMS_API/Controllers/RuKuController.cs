@@ -22,11 +22,11 @@ namespace WMS_API.Controllers
         }
 
         // GET: api/RuKu/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        //[HttpGet("{id}", Name = "Get")]
+        //public string Get(int id)
+        //{
+        //    return "value";
+        //}
 
         // POST: api/RuKu
         [HttpPost]

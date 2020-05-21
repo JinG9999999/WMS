@@ -22,11 +22,11 @@ namespace WMS_API.Controllers
         }
 
         // GET: api/Inventorys/5
-        [HttpGet("{id}", Name = "Get4")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        //[HttpGet("{id}", Name = "Get4")]
+        //public string Get(int id)
+        //{
+        //    return "value";
+        //}
 
         // POST: api/Inventorys
         [HttpPost]

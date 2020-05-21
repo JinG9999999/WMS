@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using DAL;
-using WMS_API.Models;
+using Model;
+using Microsoft.AspNetCore.Cors;
 
 namespace WMS_API.Controllers
 {
-    [Route("api/[controller]")]
+    [EnableCors("wms")]
+    [Route("api/[controller]/[action]")]//修改路由
     [ApiController]//显示发货记录
     public class DeliveryController : ControllerBase
     {
@@ -17,7 +19,7 @@ namespace WMS_API.Controllers
         DeliveryDal dal = new DeliveryDal();
         // GET: api/Delivery
         [HttpGet]
-        public IEnumerable<Delivery> Get()
+        public IEnumerable<Delivery> DeliveryShow()
         {
             return dal.DeliveryShow();
         }
