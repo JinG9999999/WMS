@@ -1,0 +1,8 @@
+C:\Users\DELL\Desktop\克隆api\WMS_API\IOT.Model\bin\Debug\netcoreapp3.1\IOT.Model.deps.json
+C:\Users\DELL\Desktop\克隆api\WMS_API\IOT.Model\bin\Debug\netcoreapp3.1\IOT.Model.dll
+C:\Users\DELL\Desktop\克隆api\WMS_API\IOT.Model\bin\Debug\netcoreapp3.1\IOT.Model.pdb
+C:\Users\DELL\Desktop\克隆api\WMS_API\IOT.Model\obj\Debug\netcoreapp3.1\IOT.Model.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\克隆api\WMS_API\IOT.Model\obj\Debug\netcoreapp3.1\IOT.Model.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\克隆api\WMS_API\IOT.Model\obj\Debug\netcoreapp3.1\IOT.Model.AssemblyInfo.cs
+C:\Users\DELL\Desktop\克隆api\WMS_API\IOT.Model\obj\Debug\netcoreapp3.1\IOT.Model.dll
+C:\Users\DELL\Desktop\克隆api\WMS_API\IOT.Model\obj\Debug\netcoreapp3.1\IOT.Model.pdb
