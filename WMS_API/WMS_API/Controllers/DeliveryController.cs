@@ -15,7 +15,7 @@ namespace WMS_API.Controllers
     [ApiController]//显示发货记录
     public class DeliveryController : ControllerBase
     {
-        //实例化
+        //实 例 化
         DeliveryDal dal = new DeliveryDal();
         // GET: api/Delivery
         [HttpGet]

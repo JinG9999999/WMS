@@ -15,7 +15,7 @@ namespace WMS_API.Controllers
     [ApiController]//显示库存记录
     public class InventoryrecordController : ControllerBase
     {
-        //实例化
+        //实 例 化
         DeliveryDal dal = new DeliveryDal();
         // GET: api/Inventoryrecord
         [HttpGet]

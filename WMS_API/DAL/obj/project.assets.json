@@ -7973,23 +7973,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DELL\\.nuget\\packages\\": {},
+    "C:\\Users\\a1761\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\克隆api - 副本\\WMS_API\\DAL\\DAL.csproj",
+      "projectUniqueName": "D:\\大实训2  仓库管理系统\\WMS API\\WMS_API\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本\\WMS_API\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本\\WMS_API\\DAL\\obj\\",
+      "projectPath": "D:\\大实训2  仓库管理系统\\WMS API\\WMS_API\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\a1761\\.nuget\\packages\\",
+      "outputPath": "D:\\大实训2  仓库管理系统\\WMS API\\WMS_API\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\a1761\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8002,8 +8002,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\DELL\\Desktop\\克隆api - 副本\\WMS_API\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本\\WMS_API\\Model\\Model.csproj"
+            "D:\\大实训2  仓库管理系统\\WMS API\\WMS_API\\Model\\Model.csproj": {
+              "projectPath": "D:\\大实训2  仓库管理系统\\WMS API\\WMS_API\\Model\\Model.csproj"
             }
           }
         }
@@ -8049,7 +8049,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

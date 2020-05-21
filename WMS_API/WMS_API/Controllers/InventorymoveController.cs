@@ -15,7 +15,7 @@ namespace WMS_API.Controllers
     [ApiController] //显示库存移动
     public class InventorymoveController : ControllerBase
     {
-        //实例化
+        //实 例 化
         DeliveryDal dal = new DeliveryDal();
         // GET: api/Inventorymove
         [HttpGet]

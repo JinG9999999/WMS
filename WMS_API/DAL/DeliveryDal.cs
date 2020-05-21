@@ -30,7 +30,7 @@ namespace DAL
             string sql = string.Format("insert into Inventorymove values('1','1','1','1','beihzu','1','2020-1-4','1','2020-5-21'))", c.SourceStoragerackId, c.AimStoragerackId, c.Status, c.IsDel, c.Remark, c.CreateBy, c.CreateDate, c.ModifiedBy,c.ModifiedDate);
             return DBHelper.ExecuteNonQuery(sql);
         }
-        //显示库存移动
+        //反填库存移动
         public Inventorymove InventorymoveFind(int id)
         {
             string sql = "select Inventorymove.InventorymoveId,Storagerack.StorageRackName,Inventorymove.Status,Inventorymove.Remark,Inventorymove.CreateBy,Inventorymove.CreateDate,Inventorymove.ModifiedBy,Inventorymove.ModifiedDate from Inventorymove join Storagerack on Storagerack.WarehouseId = Inventorymove.InventorymoveId where InventorymoveId=" + id ;
