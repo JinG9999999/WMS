@@ -17,35 +17,54 @@ namespace WMS_API.Controllers
     public class StoragerackController : ControllerBase
     {
         StoragerackDAL storagerackDAL = new StoragerackDAL();
+        /// <summary>
+        /// 显示所有货架
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IEnumerable<Storagerack> ShowStoragerack()
         {
             return storagerackDAL.ShowStoragerack();
         }
 
-        // GET: api/Storagerack/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        //// GET: api/Storagerack/5
+        //[HttpGet("{id}", Name = "Get")]
+        //public string Get(int id)
+        //{
+        //    return "value";
+        //}
 
-        // POST: api/Storagerack
+        /// <summary>
+        /// 添加新货架
+        /// </summary>
+        /// <param name="storagerack"></param>
+        /// <returns></returns>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public IActionResult PostStoragerack([FromBody] Storagerack  storagerack)
         {
+            return new JsonResult(storagerackDAL.AddStoragerack(storagerack));
         }
 
-        // PUT: api/Storagerack/5
+        /// <summary>
+        /// 修改货架信息
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="value"></param>
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public IActionResult PutStoragerack([FromBody] Storagerack  storagerack)
         {
+            return new JsonResult(storagerackDAL.AlterStoragerack(storagerack));
         }
 
-        // DELETE: api/ApiWithActions/5
+        /// <summary>
+        /// 删除货架
+        /// </summary>
+        /// <param name="id"></param>
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult DeleteStoragerack(string id)
         {
+            int ret = storagerackDAL.DelStoragerack(id);
+            return new JsonResult(ret);
         }
     }
 }
