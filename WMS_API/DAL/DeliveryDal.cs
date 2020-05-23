@@ -25,9 +25,9 @@ namespace DAL
             return DBHelper.GetToList<Inventorymove>(sql);
         }
         //添加库存移动
-        public int InventorymoveAdd(Inventorymove c)
+        public int InventorymoveAdd(Inventorymove Inventorymove)
         {
-            string sql = string.Format("insert into Inventorymove values('1','1','1','1','beihzu','1','2020-1-4','1','2020-5-21'))", c.SourceStoragerackId, c.AimStoragerackId, c.Status, c.IsDel, c.Remark, c.CreateBy, c.CreateDate, c.ModifiedBy,c.ModifiedDate);
+            string sql = string.Format("insert into Inventorymove values('1','1','1','1','beihzu','1','2020-1-4','1','2020-5-21'))", Inventorymove.SourceStoragerackId, Inventorymove.AimStoragerackId, Inventorymove.Status, Inventorymove.IsDel, Inventorymove.Remark, Inventorymove.CreateBy, Inventorymove.CreateDate, Inventorymove.ModifiedBy,Inventorymove.ModifiedDate);
             return DBHelper.ExecuteNonQuery(sql);
         }
         //反填库存移动
@@ -37,9 +37,9 @@ namespace DAL
             return DBHelper.GetToList<Inventorymove>(sql)[0];
         }
         //修改库存移动
-        public int InventorymoveUpt(Inventorymove c)
+        public int InventorymoveUpt(Inventorymove Inventorymove)
         {
-            string sql = string.Format("update Inventorymove set SourceStoragerackId='1',AimStoragerackId='1',Status='1',IsDel='1',Remark='beihzu',CreateBy='1',CreateDate='2020-1-4',ModifiedBy='1',ModifiedDate='2020-5-21')", c.SourceStoragerackId, c.AimStoragerackId, c.Status, c.IsDel, c.Remark, c.CreateBy, c.CreateDate, c.ModifiedBy, c.ModifiedDate);
+            string sql = string.Format("update Inventorymove set SourceStoragerackId='1',AimStoragerackId='1',Status='1',IsDel='1',Remark='beihzu',CreateBy='1',CreateDate='2020-1-4',ModifiedBy='1',ModifiedDate='2020-5-21')", Inventorymove.SourceStoragerackId, Inventorymove.AimStoragerackId, Inventorymove.Status, Inventorymove.IsDel, Inventorymove.Remark, Inventorymove.CreateBy, Inventorymove.CreateDate, Inventorymove.ModifiedBy, Inventorymove.ModifiedDate);
             return DBHelper.ExecuteNonQuery(sql);
         }
         //删除库存移动
