@@ -12,7 +12,7 @@ namespace WMS_API.Controllers
 {
     [EnableCors("wms")]
     [Route("api/[controller]/[action]")]//修改路由
-    [ApiController]//显示库存记录
+    [ApiController]//显 示 库 存 记 录
     public class InventoryrecordController : ControllerBase
     {
         //实 例 化
