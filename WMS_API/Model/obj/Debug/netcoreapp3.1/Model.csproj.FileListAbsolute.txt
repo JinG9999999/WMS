@@ -24,3 +24,4 @@ C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\M
 C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.pdb
 C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
 L:\实训二\仓库管理系统项目---4组api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
+D:\大实训2  仓库管理系统\WMS API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache

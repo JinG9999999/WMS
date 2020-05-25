@@ -19,7 +19,7 @@ namespace WMS_API.Controllers
         DeliveryDal dal = new DeliveryDal();
         // GET: api/Inventoryrecord
         [HttpGet]
-        public PageInventoryrecord InventoryrecordShow(int PageSize, Nullable<DateTime> time1, Nullable<DateTime> time2, int type = 0, int CurrentPage = 1)
+        public PageInventoryrecord InventoryrecordShow( Nullable<DateTime> time1, Nullable<DateTime> time2, int type = 0, int CurrentPage = 1, int PageSize = 1)
         {
             var list = dal.InventoryrecordShow();
 
