@@ -16,21 +16,21 @@ namespace WMS_API.Controllers
         StockoutdetailDAL dal = new StockoutdetailDAL();
         // GET: api/Stockouts
         [HttpGet]
-        public List<Stockoutdetail> Gets()
+        public List<StockoutDetail> Gets()
         {
             return dal.Show();
         }
 
         // GET: api/Stockouts/5
         [HttpGet("{id}", Name = "Get3")]
-        public Stockoutdetail Get(int id)
+        public StockoutDetail Get(int id)
         {
             return dal.Find(1);
         }
 
         // POST: api/Stockouts
         [HttpPost]
-        public int Post([FromBody] Stockoutdetail m)
+        public int Post([FromBody] StockoutDetail m)
         {
             m.Status = false;
             m.CreateDate = DateTime.Now;
@@ -39,11 +39,12 @@ namespace WMS_API.Controllers
 
         // PUT: api/Stockouts/5
         [HttpPut("{id}")]
-        public int Put([FromBody] Stockoutdetail m)
+        public int Put([FromBody] StockoutDetail stockoutDetail)
         {
-            m.Status = false;
-            m.CreateDate = DateTime.Now;
-            return dal.Upt(m);
+            stockoutDetail.Status = false;
+            stockoutDetail.CreateDate = DateTime.Now;
+
+            return dal.Upt(stockoutDetail);
         }
 
         // DELETE: api/ApiWithActions/5
