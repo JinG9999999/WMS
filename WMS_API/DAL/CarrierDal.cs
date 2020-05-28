@@ -17,6 +17,13 @@ namespace dal
             return DBHelper.GetToList<Carrier>(str);
         }
 
+        //反填承运商
+        public Carrier Find(int id)
+        {
+            string str = $"select * from Carrier c join UserInfo u on c.CreateBy=u.CreateBy where c.CarrierId={id}";
+            return DBHelper.GetToList<Carrier>(str)[0];
+        }
+
         //修改承运商(删除操作)
         public int DelCarrier(int id)
         {

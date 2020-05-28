@@ -11,15 +11,23 @@ namespace dal
   public  class CustomerDal
     {
         //显示客户
-        public List<Customer> CarrierShow()
+        public List<Customer> CustomerShow()
         {
             string str = "select * from Customer c join UserInfo u on c.CreateBy=u.CreateBy where c.IsDel=0";
             
             return DBHelper.GetToList<Customer>(str);
         }
 
+        //反填客户
+        public Customer Find(int id)
+        {
+            string str = $"select * from Customer c join UserInfo u on c.CreateBy=u.CreateBy where c.CustomerId={id}";
+
+            return DBHelper.GetToList<Customer>(str)[0];
+        }
+
         //修改客户(删除操作)
-        public int DelCarrier(int id)
+        public int DelCustomer(int id)
         {
             string str = $"update Customer set IsDel=1 where CustomerId={id}";
             return DBHelper.ExecuteNonQuery(str);
@@ -27,14 +35,14 @@ namespace dal
 
 
         //修改客户信息
-        public int UptCarrier(Customer c)
+        public int UptCustomer(Customer c)
         {
             string str = $"update Customer set CustomerName='{c.CustomerName}',[Address]='{c.Address}',Tel='{c.Tel}',CarrierPerson='{c.CarrierPerson}',Email='{c.Email}',Remark='{c.Remark}',ModifiedBy={c.ModifiedBy},ModifiedDate=GETDATE() where CustomerId={c.CustomerId}";
             return DBHelper.ExecuteNonQuery(str);
         }
 
         //新增客户
-        public int AddCarrier(Customer c)
+        public int AddCustomer(Customer c)
         {
             string str = $"insert into Customer values('{c.CustomerName}','{c.Address}','{c.Tel}','{c.CarrierPerson}',{c.CarrierLevel},'{c.Email}',{c.IsDel},'{c.Remark}',{c.CreateBy},getdate(),null,null)";
             return DBHelper.ExecuteNonQuery(str);
