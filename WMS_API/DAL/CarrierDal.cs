@@ -13,14 +13,14 @@ namespace dal
         //显示承运商
         public List<Carrier> CarrierShow()
         {
-            string str = "select * from Carrier c join UserInfo u on c.CreateBy=u.CreateBy where c.IsDel=0";
+            string str = "select * from Carrier c join UserInfo u on c.CreateBy=u.UserId where c.IsDel=0";
             return DBHelper.GetToList<Carrier>(str);
         }
 
         //反填承运商
         public Carrier Find(int id)
         {
-            string str = $"select * from Carrier c join UserInfo u on c.CreateBy=u.CreateBy where c.CarrierId={id}";
+            string str = $"select * from Carrier c join UserInfo u on c.CreateBy=u.UserId where c.CarrierId={id}";
             return DBHelper.GetToList<Carrier>(str)[0];
         }
 
