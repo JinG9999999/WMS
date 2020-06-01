@@ -8644,25 +8644,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\o\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\吕静\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\o\\Desktop\\实训二项目\\第四组项目API\\WMS_API\\WMS_API\\WMS_API.csproj",
+      "projectUniqueName": "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\WMS_API\\WMS_API.csproj",
       "projectName": "WMS_API",
-      "projectPath": "C:\\Users\\o\\Desktop\\实训二项目\\第四组项目API\\WMS_API\\WMS_API\\WMS_API.csproj",
-      "packagesPath": "C:\\Users\\o\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\o\\Desktop\\实训二项目\\第四组项目API\\WMS_API\\WMS_API\\obj\\",
+      "projectPath": "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\WMS_API\\WMS_API.csproj",
+      "packagesPath": "C:\\Users\\吕静\\.nuget\\packages\\",
+      "outputPath": "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\WMS_API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
+        "D:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\o\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\吕静\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -8676,11 +8676,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\o\\Desktop\\实训二项目\\第四组项目API\\WMS_API\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\o\\Desktop\\实训二项目\\第四组项目API\\WMS_API\\DAL\\DAL.csproj"
+            "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\DAL\\DAL.csproj": {
+              "projectPath": "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\DAL\\DAL.csproj"
             },
-            "C:\\Users\\o\\Desktop\\实训二项目\\第四组项目API\\WMS_API\\Model\\Model.csproj": {
-              "projectPath": "C:\\Users\\o\\Desktop\\实训二项目\\第四组项目API\\WMS_API\\Model\\Model.csproj"
+            "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\Model\\Model.csproj": {
+              "projectPath": "L:\\实训二\\仓库管理系统项目---4组api\\WMS_API\\Model\\Model.csproj"
             }
           }
         }
@@ -8715,12 +8715,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[3.1.2, 3.1.2]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -8729,7 +8723,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
