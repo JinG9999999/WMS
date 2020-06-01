@@ -13,7 +13,7 @@ namespace dal
         //显示客户
         public List<Customer> CustomerShow()
         {
-            string str = "select * from Customer c join UserInfo u on c.CreateBy=u.CreateBy where c.IsDel=0";
+            string str = "select * from Customer c join UserInfo u on c.CreateBy=u.UserId where c.IsDel=0";
             
             return DBHelper.GetToList<Customer>(str);
         }
@@ -21,7 +21,7 @@ namespace dal
         //反填客户
         public Customer Find(int id)
         {
-            string str = $"select * from Customer c join UserInfo u on c.CreateBy=u.CreateBy where c.CustomerId={id}";
+            string str = $"select * from Customer c join UserInfo u on c.CreateBy=u.UserId where c.CustomerId={id}";
 
             return DBHelper.GetToList<Customer>(str)[0];
         }

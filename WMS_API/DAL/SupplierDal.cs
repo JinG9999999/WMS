@@ -13,14 +13,14 @@ namespace dal
         //显示供应商
         public List<Supplier> SupplierShow()
         {
-            string str = "select * from Supplier s join UserInfo u on s.CreateBy=u.CreateBy where c.IsDel=0";
+            string str = "select * from Supplier s join UserInfo u on s.CreateBy=u.UserId where c.IsDel=0";
             
             return DBHelper.GetToList<Supplier>(str);
         }
         //反填供应商
         public Supplier Find(int id)
         {
-            string str = $"select * from Supplier s join UserInfo u on s.CreateBy=u.CreateBy where c.SupplierId={id}";
+            string str = $"select * from Supplier s join UserInfo u on s.CreateBy=u.UserId where c.SupplierId={id}";
 
             return DBHelper.GetToList<Supplier>(str)[0];
         }
