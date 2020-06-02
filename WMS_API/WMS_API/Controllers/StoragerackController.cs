@@ -22,7 +22,7 @@ namespace WMS_API.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public PageStoragerack ShowStoragerack(int PageSize, Nullable<DateTime> time1, Nullable<DateTime> time2, int CurrentPage = 1)
+        public PageStoragerack ShowStoragerack(Nullable<DateTime> time1, Nullable<DateTime> time2, int CurrentPage = 1)
         {
             var list = storagerackDAL.ShowStoragerack();
             if (time1 != null && time2 != null)
@@ -33,13 +33,13 @@ namespace WMS_API.Controllers
 
             ps.TotalCount = list.Count();//总记录数
 
-            if (ps.TotalCount % PageSize == 0)//计算总页数
+            if (ps.TotalCount % 10 == 0)//计算总页数
             {
-                ps.TotalPage = ps.TotalCount / PageSize;
+                ps.TotalPage = ps.TotalCount / 10;
             }
             else
             {
-                ps.TotalPage = (ps.TotalCount / PageSize) + 1;
+                ps.TotalPage = (ps.TotalCount / 10) + 1;
             }
             //纠正index页
             if (CurrentPage < 1)
@@ -53,7 +53,7 @@ namespace WMS_API.Controllers
             //赋值index为当前页
             ps.CurrentPage = CurrentPage;
             //linq查询
-            ps.storageracks = list.Skip(PageSize * (CurrentPage - 1)).Take(PageSize).ToList();
+            ps.storageracks = list.Skip(10 * (CurrentPage - 1)).Take(10).ToList();
             return ps;
 
         }
