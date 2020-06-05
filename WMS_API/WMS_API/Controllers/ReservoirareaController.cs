@@ -22,9 +22,40 @@ namespace WMS_API.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public IEnumerable<Reservoirarea> ShowReservoirarea()
+        public PageReservoirarea ShowReservoirarea( Nullable<DateTime> time1, Nullable<DateTime> time2, int CurrentPage = 1)
         {
-            return reservoirareaDAL.ShowReservoirarea();
+            var list = reservoirareaDAL.ShowReservoirarea();
+            if (time1 != null && time2 != null)
+            {
+                list = list.Where(s => s.CreateDate >= time1 && s.CreateDate <= time2).ToList();
+            }
+            PageReservoirarea ps = new PageReservoirarea();//实例化
+
+            ps.TotalCount = list.Count();//总记录数
+
+            if (ps.TotalCount % 10 == 0)//计算总页数
+            {
+                ps.TotalPage = ps.TotalCount / 10;
+            }
+            else
+            {
+                ps.TotalPage = (ps.TotalCount / 10) + 1;
+            }
+            //纠正index页
+            if (CurrentPage < 1)
+            {
+                CurrentPage = 1;
+            }
+            if (CurrentPage > ps.TotalPage)
+            {
+                CurrentPage = ps.TotalPage;
+            }
+            //赋值index为当前页
+            ps.CurrentPage = CurrentPage;
+            //linq查询
+            ps.reservoirareas = list.Skip(10 * (CurrentPage - 1)).Take(10).ToList();
+            return ps;
+           
         }
 
         //// GET: api/Reservoirarea/5
