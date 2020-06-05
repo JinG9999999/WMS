@@ -13,7 +13,7 @@ namespace dal
         //显示客户
         public List<Customer> CustomerShow()
         {
-            string str = "select * from Customer c join UserInfo u on c.CreateBy=u.CreateBy where c.IsDel=0";
+            string str = "select * from Customer c join UserInfo u on c.CreateBy=u.UserId where c.IsDel=0";
             
             return DBHelper.GetToList<Customer>(str);
         }
@@ -21,15 +21,15 @@ namespace dal
         //反填客户
         public Customer Find(int id)
         {
-            string str = $"select * from Customer c join UserInfo u on c.CreateBy=u.CreateBy where c.CustomerId={id}";
+            string str = $"select * from Customer c join UserInfo u on c.CreateBy=u.UserId where c.CustomerId={id}";
 
             return DBHelper.GetToList<Customer>(str)[0];
         }
 
         //修改客户(删除操作)
-        public int DelCustomer(int id)
+        public int DelCustomer(string id)
         {
-            string str = $"update Customer set IsDel=1 where CustomerId={id}";
+            string str = $"update Customer set IsDel=1 where CustomerId in ({id})";
             return DBHelper.ExecuteNonQuery(str);
         }
 
@@ -44,7 +44,7 @@ namespace dal
         //新增客户
         public int AddCustomer(Customer c)
         {
-            string str = $"insert into Customer values('{c.CustomerName}','{c.Address}','{c.Tel}','{c.CarrierPerson}',{c.CarrierLevel},'{c.Email}',{c.IsDel},'{c.Remark}',{c.CreateBy},getdate(),null,null)";
+            string str = $"insert into Customer values('{c.CustomerName}','{c.Address}','{c.Tel}','{c.CarrierPerson}',{c.CarrierLevel},'{c.Email}',{c.IsDel},'{c.Remark}',{c.CreateBy},getdate(),{c.CreateBy},getdate())";
             return DBHelper.ExecuteNonQuery(str);
         }
     }

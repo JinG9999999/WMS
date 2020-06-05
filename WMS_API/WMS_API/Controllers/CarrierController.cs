@@ -20,7 +20,7 @@ namespace WMS_API.Controllers
         //显示承运商
         // GET: api/<CarrierController>
         [HttpGet]
-        public PageCarrier CarrierShow(string Name, int PageSize, Nullable<DateTime> time1, Nullable<DateTime> time2, int CurrentPage = 1)
+        public PageCarrier CarrierShow( Nullable<DateTime> time1, Nullable<DateTime> time2, string Name , int PageSize=5, int CurrentPage = 1)
         {
             var list = dal.CarrierShow();
 
@@ -28,7 +28,7 @@ namespace WMS_API.Controllers
             {
                 list = list.Where(s => s.CreateDate >= time1 && s.CreateDate <= time2).ToList();
             }
-            if (Name!="")
+            if (Name!=null)
             {
                 list = list.Where(s => s.CarrierName.Contains(Name)).ToList();
             }
@@ -79,7 +79,7 @@ namespace WMS_API.Controllers
             return dal.AddCarrier(c);
         }
 
-        //修改承运商信息
+        //修改承运商信息a
         // PUT api/<CarrierController>/5
         [HttpPut("{id}")]
         public int Put(Carrier c)
@@ -90,7 +90,7 @@ namespace WMS_API.Controllers
         //修改承运商状态为已删除
         // DELETE api/<CarrierController>/5
         [HttpDelete("{id}")]
-        public int Upt(int id)
+        public int Upt(string id)
         {
             return dal.DelCarrier(id);
         }

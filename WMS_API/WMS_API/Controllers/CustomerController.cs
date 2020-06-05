@@ -31,7 +31,7 @@ namespace WMS_API.Controllers
             {
                 list = list.Where(s => s.CreateDate >= time1 && s.CreateDate <= time2).ToList();
             }
-            if (Name != "")
+            if (Name != null)
             {
                 list = list.Where(s => s.CustomerName.Contains(Name)).ToList();
             }
@@ -95,7 +95,7 @@ namespace WMS_API.Controllers
         //修改客户状态为已删除
         // DELETE api/<CustomerController>/5
         [HttpDelete("{id}")]
-        public int UPT(int id)
+        public int UPT(string id)
         {
             return dal.DelCustomer(id);
         }

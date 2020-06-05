@@ -19,7 +19,7 @@ namespace WMS_API.Controllers
         DeliveryDal dal = new DeliveryDal();
         // GET: api/Delivery
         [HttpGet]
-        public PageDelivery DeliveryShow( Nullable<DateTime> time1, Nullable<DateTime> time2, int CurrentPage=1, int PageSize=6)
+        public PageDelivery DeliveryShow( Nullable<DateTime> time1, Nullable<DateTime> time2,  int CurrentPage = 1, int PageSize=5)
         {
             var list = dal.DeliveryShow();
 
@@ -27,6 +27,8 @@ namespace WMS_API.Controllers
             {
                 list = list.Where(s => s.CreateDate >= time1 && s.CreateDate <= time2).ToList();
             }
+            
+
             PageDelivery ps = new PageDelivery();//实例化
 
             ps.TotalCount = list.Count();//总记录数
