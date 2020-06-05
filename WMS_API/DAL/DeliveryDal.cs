@@ -15,7 +15,7 @@ namespace DAL
         //显示发货记录
         public List<Delivery> DeliveryShow()
         {
-            string sql = "select Stockout.OrderNo,Delivery.TrackingNo,DeliveryDate,Carrier.CarrierName,Carrier.CarrierPerson,Carrier.Tel,Carrier.Remark,Carrier.CreateBy,Carrier.CreateDate,Carrier.ModifiedBy,Carrier.ModifiedDate from Delivery join Stockout on Delivery.StockOutId = Stockout.StockOutId join Carrier on Carrier.CarrierId = Delivery.CarrierId";
+            string sql = "select * from Delivery d join Stockout s on d.StockOutId=s.StockOutId join Carrier c on d.CarrierId=c.CarrierId";
             return DBHelper.GetToList<Delivery>(sql);
         }
         //显示库存移动
