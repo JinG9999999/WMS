@@ -20,6 +20,7 @@ namespace Model
     public class PageDelivery
     {
         public List<Delivery> Deliverys { get; set; }
+        public int PageSize { get; set; }
 
         public int TotalCount { get; set; }//总记录数
 
