@@ -13,9 +13,10 @@ namespace DAL
         /// <returns></returns>
         public List<Warehouse> ShowWarehouse()
         {
-            string str = "select * from Warehouse join UserInfo on UserInfo.UserId=Warehouse.CreateBy";
+            string str = "select w.WarehouseId WarehouseId,w.WarehouseName WarehouseName,w.Remark Remark,w.CreateBy CreateBy,u.UserNickname UserNickname,w.CreateDate CreateDate, w.ModifiedBy ModifiedBy,u.UserNickname UserNickname2, w.ModifiedDate ModifiedDate from Warehouse w join UserInfo u on u.UserId=w.CreateBy join UserInfo u1 on u1.UserId=w.ModifiedBy";
             return DBHelper.GetToList<Warehouse>(str);
         }
+
         /// <summary>
         /// 添加新仓库
         /// </summary>
