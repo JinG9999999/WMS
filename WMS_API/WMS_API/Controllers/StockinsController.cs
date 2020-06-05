@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using DAL;
 using Model;
+using Microsoft.AspNetCore.Cors;
 
 namespace WMS_API.Controllers
 {
+    [EnableCors("wms")]
     [Route("api/[controller]/[action]")]//修改路由
     [ApiController]
     public class StockinsController : ControllerBase
@@ -16,14 +18,14 @@ namespace WMS_API.Controllers
         StockinDAL dal = new StockinDAL();
         // GET: api/Stockins
         [HttpGet]
-        public PageStu Gets(int PageSize,Nullable<DateTime> time1,Nullable<DateTime> time2,string type="",int state=0, int CurrentPage=1)
+        public PageStu Gets(Nullable<DateTime> time1,Nullable<DateTime> time2,string type="",int state=0, int CurrentPage=1, int PageSize = 10)
         {
             var list = dal.Show();
             if (time1!=null && time2!=null)
             {
                 list = list.Where(s => s.CreateDate >= time1 && s.CreateDate <= time2).ToList();
             }
-            if (string.IsNullOrEmpty(type))
+            if (!string.IsNullOrEmpty(type))
             {
                 list = list.Where(s => s.StockInType == type).ToList();
             }
@@ -60,7 +62,7 @@ namespace WMS_API.Controllers
         }
 
         // GET: api/Stockins/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}", Name = "Get11")]
         public Stockin Get(int id)
         {
             return dal.Find(id);
@@ -78,8 +80,8 @@ namespace WMS_API.Controllers
         }
 
         // PUT: api/Stockins/5
-        [HttpPut("{id}")]
-        public int Put([FromBody] Stockin m)
+        [HttpPost]
+        public int Puts(Stockin m)
         {
             System.Random rdn = new System.Random();
             m.OrderNo = Convert.ToInt32(rdn.Next(99999999).ToString().PadLeft(8, '0'));
@@ -89,19 +91,20 @@ namespace WMS_API.Controllers
         }
 
         // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
-        public int Delete(string id)
+        [HttpDelete]
+        public int Delete(int id)
         {
-            int t = 0;
-            id = id.Substring(0, id.Length - 1);//删除字符串最后一个字符
-            string[] datalist = id.Split(',');
-            foreach (var item in datalist)
-            {
-                int daa = int.Parse(item);
-                //调用删除方法
-                t = t + dal.Del(daa);
-            }
-            return t;
+            return dal.Del(id);
+            //int t = 0;
+            //id = id.Substring(0, id.Length - 1);//删除字符串最后一个字符
+            //string[] datalist = id.Split(',');
+            //foreach (var item in datalist)
+            //{
+            //    int daa = int.Parse(item);
+            //    //调用删除方法
+            //    t = t + dal.Del(daa);
+            //}
+            //return t;
         }
     }
 }

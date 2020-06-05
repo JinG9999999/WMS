@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Cors;
 
 namespace WMS_API.Controllers
 {
+    [EnableCors("wms")]
     [Route("api/[controller]")]
     [ApiController]
     public class WarehouseController : ControllerBase

@@ -23,4 +23,3 @@ C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\M
 C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
 C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.dll
 C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.pdb
-C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache

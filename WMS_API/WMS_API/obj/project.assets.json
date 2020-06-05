@@ -8649,11 +8649,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\克隆api - 副本\\WMS_API\\WMS_API\\WMS_API.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\WMS_API\\WMS_API.csproj",
       "projectName": "WMS_API",
-      "projectPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本\\WMS_API\\WMS_API\\WMS_API.csproj",
+      "projectPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\WMS_API\\WMS_API.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本\\WMS_API\\WMS_API\\obj\\",
+      "outputPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\WMS_API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -8672,8 +8672,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\DELL\\Desktop\\克隆api - 副本\\WMS_API\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本\\WMS_API\\DAL\\DAL.csproj"
+            "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj"
             }
           }
         }

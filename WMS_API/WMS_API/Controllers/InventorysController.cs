@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DAL;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Model;
 
 namespace WMS_API.Controllers
 {
+    [EnableCors("wms")]
     [Route("api/[controller]")]
     [ApiController]
     public class InventorysController : ControllerBase

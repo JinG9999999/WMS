@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\克隆api - 副本\\WMS_API\\Model\\Model.csproj": {}
+    "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\克隆api - 副本\\WMS_API\\Model\\Model.csproj": {
+    "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\克隆api - 副本\\WMS_API\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本\\WMS_API\\Model\\Model.csproj",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本\\WMS_API\\Model\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
