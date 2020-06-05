@@ -16,7 +16,7 @@ namespace WMS_API.Controllers
         StockindetailDAL dal = new StockindetailDAL();
         // GET: api/Stockindetails
         [HttpGet]
-        public List<Stockindetail> Gets()
+        public List<Stockindetail> StockindetailGet()
         {
             return dal.Show();
         }
@@ -30,20 +30,20 @@ namespace WMS_API.Controllers
 
         // POST: api/Stockindetails
         [HttpPost]
-        public int Post([FromBody] Stockindetail m)
+        public int Post([FromBody] Stockindetail stockinDetail)
         {
-            m.Status = false;
-            m.CreateDate = DateTime.Now;
-            return dal.Add(m);
+            stockinDetail.Status = false;
+            stockinDetail.CreateDate = DateTime.Now;
+            return dal.Add(stockinDetail);
         }
 
         // PUT: api/Stockindetails/5
         [HttpPut("{id}")]
-        public int Put([FromBody] Stockindetail m)
+        public int Put([FromBody] Stockindetail  stockindetail)
         {
-            m.Status = false;
-            m.CreateDate = DateTime.Now;
-            return dal.Upt(m);
+            stockindetail.Status = false;
+            stockindetail.CreateDate = DateTime.Now;
+            return dal.Upt(stockindetail);
         }
 
         // DELETE: api/ApiWithActions/5
