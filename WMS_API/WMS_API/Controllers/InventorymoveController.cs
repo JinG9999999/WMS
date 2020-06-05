@@ -19,7 +19,7 @@ namespace WMS_API.Controllers
         DeliveryDal dal = new DeliveryDal();
         // GET: api/Inventorymove
         [HttpGet]
-        public PageInventorymove InventorymoveShow( Nullable<DateTime> time1, Nullable<DateTime> time2, int type = 0, int CurrentPage = 1, int PageSize = 1)
+        public PageInventorymove InventorymoveShow( Nullable<DateTime> time1, Nullable<DateTime> time2, int type = 0, int CurrentPage = 1, int PageSize = 6)
         {
             var list = dal.InventorymoveShow();
 
@@ -83,7 +83,7 @@ namespace WMS_API.Controllers
         }
 
         // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
+        [HttpPost]
         public int Delete(int id)
         {
             return dal.InventorymoveDel(id);
