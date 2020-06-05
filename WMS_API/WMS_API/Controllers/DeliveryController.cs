@@ -19,7 +19,7 @@ namespace WMS_API.Controllers
         DeliveryDal dal = new DeliveryDal();
         // GET: api/Delivery
         [HttpGet]
-        public PageDelivery DeliveryShow( Nullable<DateTime> time1, Nullable<DateTime> time2,  int CurrentPage = 1, int PageSize=5)
+        public PageDelivery DeliveryShow( Nullable<DateTime> time1, Nullable<DateTime> time2,  int CurrentPage = 1, int PageSize=6)
         {
             var list = dal.DeliveryShow();
 
