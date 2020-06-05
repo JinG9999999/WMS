@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using Model;
+﻿using Model;
 using System.Collections.Generic;
 
 namespace DAL
