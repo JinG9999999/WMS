@@ -25,9 +25,9 @@ namespace dal
         }
 
         //修改承运商(删除操作)
-        public int DelCarrier(int id)
+        public int DelCarrier(string id)
         {
-            string str = $"update Carrier set IsDel=1 where CarrierId={id}";
+            string str = $"update Carrier set IsDel=1 where CarrierId in ({id})";
             return DBHelper.ExecuteNonQuery(str);
         }
 
@@ -41,7 +41,7 @@ namespace dal
         //新增承运商
         public int AddCarrier(Carrier c)
         {
-            string str = $"insert into Carrier values('{c.CarrierName}','{c.Address}','{c.Tel}','{c.CarrierPerson}',{c.CarrierLevel},'{c.Email}',{c.IsDel},'{c.Remark}',{c.CreateBy},getdate(),null,null)";
+            string str = $"insert into Carrier values('{c.CarrierName}','{c.Address}','{c.Tel}','{c.CarrierPerson}',{c.CarrierLevel},'{c.Email}',0,'{c.Remark}',{c.CreateBy},getdate(),{c.CreateBy},getdate())";
             return DBHelper.ExecuteNonQuery(str);
         }
 

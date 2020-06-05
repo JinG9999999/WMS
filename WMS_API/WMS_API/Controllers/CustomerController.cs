@@ -95,7 +95,7 @@ namespace WMS_API.Controllers
         //修改客户状态为已删除
         // DELETE api/<CustomerController>/5
         [HttpDelete("{id}")]
-        public int UPT(int id)
+        public int UPT(string id)
         {
             return dal.DelCustomer(id);
         }

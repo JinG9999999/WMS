@@ -79,7 +79,7 @@ namespace WMS_API.Controllers
             return dal.AddCarrier(c);
         }
 
-        //修改承运商信息
+        //修改承运商信息a
         // PUT api/<CarrierController>/5
         [HttpPut("{id}")]
         public int Put(Carrier c)
@@ -90,7 +90,7 @@ namespace WMS_API.Controllers
         //修改承运商状态为已删除
         // DELETE api/<CarrierController>/5
         [HttpDelete("{id}")]
-        public int Upt(int id)
+        public int Upt(string id)
         {
             return dal.DelCarrier(id);
         }

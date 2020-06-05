@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace WMS_API.Controllers
 {
+    [EnableCors("wms")]
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase

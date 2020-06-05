@@ -27,4 +27,10 @@ namespace Model
 
         public int CurrentPage { get; set; }//当前页
     }
+    public class Values
+    {
+        public int id { get; set; }
+        public string name { get; set; }
+        public Nullable<DateTime> times { get; set; }
+    }
 }

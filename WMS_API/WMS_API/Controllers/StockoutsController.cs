@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Model;
 using DAL;
+using Microsoft.AspNetCore.Cors;
 
 namespace WMS_API.Controllers
 {
+    [EnableCors("wms")]
     [Route("api/[controller]")]
     [ApiController]
     public class StockoutsController : ControllerBase
@@ -89,7 +91,7 @@ namespace WMS_API.Controllers
         }
 
         // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
+        [HttpDelete]
         public int Delete(string id)
         {
             int t = 0;
