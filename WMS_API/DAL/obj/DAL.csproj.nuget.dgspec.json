@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\大实训2  仓库管理系统\\WMS API\\WMS_API\\DAL\\DAL.csproj": {}
+    "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "D:\\大实训2  仓库管理系统\\WMS API\\WMS_API\\DAL\\DAL.csproj": {
+    "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\大实训2  仓库管理系统\\WMS API\\WMS_API\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\大实训2  仓库管理系统\\WMS API\\WMS_API\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\a1761\\.nuget\\packages\\",
-        "outputPath": "D:\\大实训2  仓库管理系统\\WMS API\\WMS_API\\DAL\\obj\\",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\a1761\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\大实训2  仓库管理系统\\WMS API\\WMS_API\\Model\\Model.csproj": {
-                "projectPath": "D:\\大实训2  仓库管理系统\\WMS API\\WMS_API\\Model\\Model.csproj"
+              "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj"
               }
             }
           }
@@ -77,24 +77,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\大实训2  仓库管理系统\\WMS API\\WMS_API\\Model\\Model.csproj": {
+    "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\大实训2  仓库管理系统\\WMS API\\WMS_API\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "D:\\大实训2  仓库管理系统\\WMS API\\WMS_API\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\a1761\\.nuget\\packages\\",
-        "outputPath": "D:\\大实训2  仓库管理系统\\WMS API\\WMS_API\\Model\\obj\\",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\克隆api - 副本 - 副本\\WMS_API\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\a1761\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -132,7 +132,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
