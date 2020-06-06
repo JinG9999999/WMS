@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using DAL;
 using Microsoft.AspNetCore.Cors;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using DAL;
 using Model;
+using System.Linq;
 
 namespace WMS_API.Controllers
 {
@@ -22,42 +18,60 @@ namespace WMS_API.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public PageReservoirarea ShowReservoirarea( Nullable<DateTime> time1, Nullable<DateTime> time2, int CurrentPage = 1)
+
+        public PageReservoirarea ShowReservoirarea(/* Nullable<DateTime> time1, Nullable<DateTime> time2,*/ string name = "", int wid = 0, int CurrentPage = 1, int Pagesize = 5)
         {
             var list = reservoirareaDAL.ShowReservoirarea();
-            if (time1 != null && time2 != null)
+            //if (time1 != null && time2 != null)
+            //{
+            //    list = list.Where(s => s.CreateDate >= time1 && s.CreateDate <= time2).ToList();
+            //}
+            if (!string.IsNullOrEmpty(name))
             {
-                list = list.Where(s => s.CreateDate >= time1 && s.CreateDate <= time2).ToList();
+                list = list.Where(s => s.ReservoirAreaName.Contains(name)).ToList();
             }
+            if (wid != 0)
+            {
+                list = list.Where(s => s.WarehouseId == wid).ToList();
+            }
+
             PageReservoirarea ps = new PageReservoirarea();//实例化
 
-            ps.TotalCount = list.Count();//总记录数
+            ps.totalCount = list.Count();//总记录数
 
-            if (ps.TotalCount % 10 == 0)//计算总页数
+            if (ps.totalCount % Pagesize == 0)//计算总页数
             {
-                ps.TotalPage = ps.TotalCount / 10;
+                ps.totalPage = ps.totalCount / Pagesize;
             }
             else
             {
-                ps.TotalPage = (ps.TotalCount / 10) + 1;
+                ps.totalPage = (ps.totalCount / Pagesize) + 1;
             }
             //纠正index页
             if (CurrentPage < 1)
             {
                 CurrentPage = 1;
             }
-            if (CurrentPage > ps.TotalPage)
+            if (CurrentPage > ps.totalPage)
             {
-                CurrentPage = ps.TotalPage;
+                CurrentPage = ps.totalPage;
             }
             //赋值index为当前页
-            ps.CurrentPage = CurrentPage;
+            ps.currentPage = CurrentPage;
             //linq查询
-            ps.reservoirareas = list.Skip(10 * (CurrentPage - 1)).Take(10).ToList();
+            ps.reservoirareas = list.Skip(Pagesize * (CurrentPage - 1)).Take(Pagesize).ToList();
             return ps;
-           
-        }
 
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        //[HttpGet]
+        //public List<Warehouse> BandSelWarehouse()
+        //{
+        //    return reservoirareaDAL.BandSelWarehouse();
+        //}
         //// GET: api/Reservoirarea/5
         //[HttpGet("{id}", Name = "Get")]
         //public string Get(int id)
@@ -71,7 +85,7 @@ namespace WMS_API.Controllers
         /// <param name="reservoirarea"></param>
         /// <returns></returns>
         [HttpPost]
-        public IActionResult PostReservoirarea([FromBody] Reservoirarea  reservoirarea)
+        public IActionResult PostReservoirarea([FromBody] Reservoirarea reservoirarea)
         {
             return new JsonResult(reservoirareaDAL.AddReservoirarea(reservoirarea));
         }
