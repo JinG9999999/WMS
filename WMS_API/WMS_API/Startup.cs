@@ -41,7 +41,9 @@ namespace WMS_API
             }
 
             app.UseRouting();
+
             app.UseCors("wms");
+
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

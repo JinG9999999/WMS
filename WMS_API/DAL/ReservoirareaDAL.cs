@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using Model;
+﻿using Model;
 using System.Collections.Generic;
 
 namespace DAL
@@ -13,8 +11,18 @@ namespace DAL
          /// <returns></returns>
         public List<Reservoirarea> ShowReservoirarea()
         {
-            string str = "select * from Reservoirarea r join Warehouse w on w.WarehouseId =r.WarehouseId";
+            string str = "select  r.ReservoirAreaId ReservoirAreaId,r.ReservoirAreaName ReservoirAreaName ,w.WarehouseName WarehouseName,r.Remark Remark,r.CreateBy CreateBy,r.ModifiedBy ModifiedBy, r.WarehouseId WarehouseId,u.UserNickname UserNickname,r.CreateDate CreateDate,u.UserNickname UserNickname2,r.ModifiedDate ModifiedDate from Reservoirarea r join Warehouse w on w.WarehouseId = r.WarehouseId join UserInfo u on w.CreateBy = u.UserId";
             return DBHelper.GetToList<Reservoirarea>(str);
+        }
+        /// <summary>
+        /// 绑定下拉
+        /// </summary>
+        /// <returns></returns>
+        public List<Warehouse> BandSelWarehouse()
+        {
+            string str = "select * from Warehouse";
+            return DBHelper.GetToList<Warehouse>(str);
+
         }
         /// <summary>
         /// 添加新库区
@@ -46,5 +54,6 @@ namespace DAL
             string str = $"update Reservoirarea set IsDel=1 where ReservoirAreaId in(" + id + ")";
             return DBHelper.ExecuteNonQuery(str);
         }
+
     }
 }

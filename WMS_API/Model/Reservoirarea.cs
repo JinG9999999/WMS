@@ -14,16 +14,21 @@ namespace Model
         public DateTime? CreateDate { get; set; }
         public int? ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
+        public string WarehouseName { get; set; }
+        public string UserNickname { get; set; }
+        public string UserNickname2 { get; set; }
     }
     //分页
     public class PageReservoirarea
     {
         public List<Reservoirarea>  reservoirareas { get; set; }
 
-        public int TotalCount { get; set; }//总记录数
+        public int totalCount { get; set; }//总记录数
 
-        public int TotalPage { get; set; }//总页数
+        public int totalPage { get; set; }//总页数
 
-        public int CurrentPage { get; set; }//当前页
+        public int currentPage { get; set; }//当前页
+
+        public int pageSize { get; set; }
     }
 }
