@@ -8,13 +8,13 @@ using Model;
 
 namespace dal
 {
-   public class SupplierDal
+    public class SupplierDal
     {
         //显示供应商
         public List<Supplier> SupplierShow()
         {
             string str = "select * from Supplier s join UserInfo u on s.CreateBy=u.CreateBy where c.IsDel=0";
-            
+
             return DBHelper.GetToList<Supplier>(str);
         }
         //反填供应商
@@ -26,9 +26,9 @@ namespace dal
         }
 
         //修改供应商(删除操作)
-        public int DelSupplier(int id)
+        public int DelSupplier(string id)
         {
-            string str = $"update Supplier set IsDel=1 where SupplierId={id}";
+            string str = $"update Supplier set IsDel=1 where SupplierId in ({id})";
             return DBHelper.ExecuteNonQuery(str);
         }
 

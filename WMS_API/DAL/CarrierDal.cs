@@ -25,9 +25,9 @@ namespace dal
         }
 
         //修改承运商(删除操作)
-        public int DelCarrier(int id)
+        public int DelCarrier(string id)
         {
-            string str = $"update Carrier set IsDel=1 where CarrierId={id}";
+            string str = $"update Carrier set IsDel=1 where CarrierId in ({id})";
             return DBHelper.ExecuteNonQuery(str);
         }
 

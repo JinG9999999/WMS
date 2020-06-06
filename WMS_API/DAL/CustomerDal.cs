@@ -27,9 +27,9 @@ namespace dal
         }
 
         //修改客户(删除操作)
-        public int DelCustomer(int id)
+        public int DelCustomer(string id)
         {
-            string str = $"update Customer set IsDel=1 where CustomerId={id}";
+            string str = $"update Customer set IsDel=1 where CustomerId in ({id})";
             return DBHelper.ExecuteNonQuery(str);
         }
 

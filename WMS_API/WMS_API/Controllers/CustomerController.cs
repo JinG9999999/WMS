@@ -23,7 +23,7 @@ namespace WMS_API.Controllers
         //显示客户
         // GET: api/<CustomerController>
         [HttpGet]
-        public PageCustomer CustomerShow(string Name, int PageSize, Nullable<DateTime> time1, Nullable<DateTime> time2, int CurrentPage = 1)
+        public PageCustomer CustomerShow(string Name, Nullable<DateTime> time1, Nullable<DateTime> time2, int PageSize = 5, int CurrentPage = 1)
         {
             var list = dal.CustomerShow();
 
@@ -95,7 +95,7 @@ namespace WMS_API.Controllers
         //修改客户状态为已删除
         // DELETE api/<CustomerController>/5
         [HttpDelete("{id}")]
-        public int UPT(int id)
+        public int UPT(string id)
         {
             return dal.DelCustomer(id);
         }

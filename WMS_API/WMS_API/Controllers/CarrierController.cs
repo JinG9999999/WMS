@@ -20,7 +20,7 @@ namespace WMS_API.Controllers
         //显示承运商
         // GET: api/<CarrierController>
         [HttpGet]
-        public PageCarrier CarrierShow(string Name, int PageSize, Nullable<DateTime> time1, Nullable<DateTime> time2, int CurrentPage = 1)
+        public PageCarrier CarrierShow(string Name,  Nullable<DateTime> time1, Nullable<DateTime> time2, int PageSize = 5, int CurrentPage = 1)
         {
             var list = dal.CarrierShow();
 
@@ -90,7 +90,7 @@ namespace WMS_API.Controllers
         //修改承运商状态为已删除
         // DELETE api/<CarrierController>/5
         [HttpDelete("{id}")]
-        public int Upt(int id)
+        public int Upt(string id)
         {
             return dal.DelCarrier(id);
         }

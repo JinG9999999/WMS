@@ -20,7 +20,7 @@ namespace WMS_API.Controllers
         //显示供应商
         // GET: api/<SupplierController>
         [HttpGet]
-        public PageSupplier SupplierShow(string Name, int PageSize, Nullable<DateTime> time1, Nullable<DateTime> time2, int CurrentPage = 1)
+        public PageSupplier SupplierShow(string Name,  Nullable<DateTime> time1, Nullable<DateTime> time2, int PageSize = 5, int CurrentPage = 1)
         {
             var list = dal.SupplierShow();
 
@@ -93,7 +93,7 @@ namespace WMS_API.Controllers
         //修改供应商状态为已删除
         // DELETE api/<SupplierController>/5
         [HttpDelete("{id}")]
-        public int UPT(int id)
+        public int UPT(string id)
         {
             return dal.DelSupplier(id);
         }
