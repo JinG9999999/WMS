@@ -27,7 +27,7 @@ namespace DAL
         //添加库存移动
         public int InventorymoveAdd(Inventorymove Inventorymove)
         {
-            string sql = string.Format("insert into Inventorymove values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", Inventorymove.SourceStoragerackId, Inventorymove.AimStoragerackId, Inventorymove.Status, Inventorymove.IsDel, Inventorymove.Remark, Inventorymove.CreateBy, Inventorymove.CreateDate, Inventorymove.ModifiedBy,Inventorymove.ModifiedDate);
+            string sql = string.Format("insert into Inventorymove values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')", Inventorymove.SourceStoragerackId, Inventorymove.AimStoragerackId, Inventorymove.Status, Inventorymove.IsDel, Inventorymove.Remark, Inventorymove.CreateBy, Inventorymove.CreateDate= DateTime.Now, Inventorymove.ModifiedBy,Inventorymove.ModifiedDate=DateTime.Now);
             return DBHelper.ExecuteNonQuery(sql);
         }
         //反填库存移动
