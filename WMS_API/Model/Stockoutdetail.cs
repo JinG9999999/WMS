@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Model
 {
-    public partial class Stockoutdetail
+    public partial class StockoutDetail
     {
         public int StockInDetailId { get; set; }
         public int? StockOutId { get; set; }

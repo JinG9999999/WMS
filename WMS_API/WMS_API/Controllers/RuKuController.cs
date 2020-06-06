@@ -6,40 +6,47 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Model;
 using DAL;
+using Microsoft.AspNetCore.Cors;
 
 namespace WMS_API.Controllers
 {
-    [Route("api/[controller]")]
+    [EnableCors("wms")]
+    [Route("api/[controller]/[action]")]//修改路由
     [ApiController]
     public class RuKuController : ControllerBase
     {
         ShenheDAL dal = new ShenheDAL();
         // GET: api/RuKu
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<string> Gets()
         {
             return new string[] { "value1", "value2" };
         }
 
         // GET: api/RuKu/5
-        //[HttpGet("{id}", Name = "Get")]
-        //public string Get(int id)
-        //{
-        //    return "value";
-        //}
-
-        // POST: api/RuKu
-        [HttpPost]
-        public void Post([FromBody] string value)
+        [HttpGet("{id}", Name = "Get7")]
+        public string Get(int id)
         {
+            return "value";
         }
 
+        // POST: api/RuKu
+        //[HttpPost]
+        //public void Post([FromBody] string value)
+        //{
+        //}
+
         // PUT: api/RuKu/5
-        [HttpPut("{id}")]
-        public int Put([FromBody] int id, string name, Nullable<DateTime> times)
+        [HttpPost]
+        public int Puts([FromBody] Values m)
         {
-                   dal.Upts(id,name,times);
-            return dal.Uptss(id, name, times);
+            m.times = DateTime.Now;
+            if (dal.Uptss(m) == 0)
+            {
+                return 0;
+            }
+            dal.Upts(m);
+            return dal.Uptss(m);
         }
 
         // DELETE: api/ApiWithActions/5
@@ -48,4 +55,7 @@ namespace WMS_API.Controllers
         {
         }
     }
+
+    
+
 }

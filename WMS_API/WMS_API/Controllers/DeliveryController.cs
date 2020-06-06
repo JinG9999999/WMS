@@ -19,7 +19,7 @@ namespace WMS_API.Controllers
         DeliveryDal dal = new DeliveryDal();
         // GET: api/Delivery
         [HttpGet]
-        public PageDelivery DeliveryShow( Nullable<DateTime> time1, Nullable<DateTime> time2, int type = 0, int CurrentPage = 1, int PageSize=1)
+        public PageDelivery DeliveryShow( Nullable<DateTime> time1, Nullable<DateTime> time2,  int CurrentPage = 1, int PageSize=6)
         {
             var list = dal.DeliveryShow();
 
@@ -27,10 +27,7 @@ namespace WMS_API.Controllers
             {
                 list = list.Where(s => s.CreateDate >= time1 && s.CreateDate <= time2).ToList();
             }
-            if (type != 0)
-            {
-                list = list.Where(s => s.StockOutId == type).ToList();
-            }
+            
 
             PageDelivery ps = new PageDelivery();//实例化
 

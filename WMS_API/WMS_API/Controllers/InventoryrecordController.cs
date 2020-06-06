@@ -19,17 +19,13 @@ namespace WMS_API.Controllers
         DeliveryDal dal = new DeliveryDal();
         // GET: api/Inventoryrecord
         [HttpGet]
-        public PageInventoryrecord InventoryrecordShow( Nullable<DateTime> time1, Nullable<DateTime> time2, int type = 0, int CurrentPage = 1, int PageSize = 1)
+        public PageInventoryrecord InventoryrecordShow( Nullable<DateTime> time1, Nullable<DateTime> time2, int CurrentPage = 1, int PageSize = 6)
         {
             var list = dal.InventoryrecordShow();
 
             if (time1 != null && time2 != null)
             {
                 list = list.Where(s => s.CreateDate >= time1 && s.CreateDate <= time2).ToList();
-            }
-            if (type != 0)
-            {
-                list = list.Where(s => s.StockInDetailId == type).ToList();
             }
 
             PageInventoryrecord ps = new PageInventoryrecord();//实例化
