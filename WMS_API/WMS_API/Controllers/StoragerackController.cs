@@ -22,24 +22,31 @@ namespace WMS_API.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public PageStoragerack ShowStoragerack(Nullable<DateTime> time1, Nullable<DateTime> time2, int CurrentPage = 1)
+        public PageStoragerack ShowStoragerack(string name = "", int rid = 0, int CurrentPage = 1, int Pagesize = 5)
         {
             var list = storagerackDAL.ShowStoragerack();
-            if (time1 != null && time2 != null)
+            if (!string.IsNullOrEmpty(name))
             {
-                list = list.Where(s => s.CreateDate >= time1 && s.CreateDate <= time2).ToList();
+                list = list.Where(s => s.StorageRackName.Contains(name)).ToList();
             }
+            if (rid != 0)
+            {
+                list = list.Where(s => s.ReservoirAreaId == rid).ToList();
+            }
+
+
+
             PageStoragerack ps = new PageStoragerack();//实例化
 
             ps.TotalCount = list.Count();//总记录数
 
-            if (ps.TotalCount % 10 == 0)//计算总页数
+            if (ps.TotalCount % Pagesize == 0)//计算总页数
             {
-                ps.TotalPage = ps.TotalCount / 10;
+                ps.TotalPage = ps.TotalCount / Pagesize;
             }
             else
             {
-                ps.TotalPage = (ps.TotalCount / 10) + 1;
+                ps.TotalPage = (ps.TotalCount / Pagesize) + 1;
             }
             //纠正index页
             if (CurrentPage < 1)
@@ -53,8 +60,9 @@ namespace WMS_API.Controllers
             //赋值index为当前页
             ps.CurrentPage = CurrentPage;
             //linq查询
-            ps.storageracks = list.Skip(10 * (CurrentPage - 1)).Take(10).ToList();
+            ps.storageracks = list.Skip(Pagesize * (CurrentPage - 1)).Take(Pagesize).ToList();
             return ps;
+
 
         }
 
@@ -96,6 +104,16 @@ namespace WMS_API.Controllers
         {
             int ret = storagerackDAL.DelStoragerack(id);
             return new JsonResult(ret);
+        }
+        /// <summary>
+        /// 获取单条
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public Storagerack Find(int id)
+        {
+            return storagerackDAL.Find(id);
         }
     }
 }

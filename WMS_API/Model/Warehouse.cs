@@ -13,6 +13,8 @@ namespace Model
         public DateTime? CreateDate { get; set; }
         public int? ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
+        public string UserNickname { get; set; }
+        public string UserNickname2 { get; set; }
     }
     //分页
     public class PageWarehouse
