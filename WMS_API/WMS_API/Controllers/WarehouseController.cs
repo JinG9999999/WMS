@@ -11,7 +11,8 @@ using Microsoft.AspNetCore.Cors;
 namespace WMS_API.Controllers
 {
     [EnableCors("wms")]
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]//修改路由
     [ApiController]
     public class WarehouseController : ControllerBase
     {

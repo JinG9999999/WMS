@@ -20,7 +20,7 @@ namespace WMS_API.Controllers
         //显示供应商
         // GET: api/<SupplierController>
         [HttpGet]
-        public PageSupplier SupplierShow(string Name,  Nullable<DateTime> time1, Nullable<DateTime> time2, int CurrentPage = 1,int PageSize=5)
+        public PageSupplier SupplierShow(string Name,  Nullable<DateTime> time1, Nullable<DateTime> time2, int PageSize = 5, int CurrentPage = 1)
         {
             var list = dal.SupplierShow();
 
@@ -28,7 +28,7 @@ namespace WMS_API.Controllers
             {
                 list = list.Where(s => s.CreateDate >= time1 && s.CreateDate <= time2).ToList();
             }
-            if (Name != null)
+            if (Name != "")
             {
                 list = list.Where(s => s.SupplierName.Contains(Name)).ToList();
             }
