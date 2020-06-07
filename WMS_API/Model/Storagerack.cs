@@ -12,9 +12,11 @@ namespace Model
         public string Remark { get; set; }
         public int? CreateBy { get; set; }
         public DateTime? CreateDate { get; set; }
-        public string ModifiedBy { get; set; }
+        public int ModifiedBy { get; set; }
         public DateTime? ModifiedDate { get; set; }
-        public string WarehouseId { get; set; }
+        public string ReservoirAreaName { get; set; }
+        public string UserNickname { get; set; }
+        public string UserNickname2 { get; set; }
     }
     //分页
     public class PageStoragerack

@@ -112,5 +112,15 @@ namespace WMS_API.Controllers
             int ret = reservoirareaDAL.DelReservoirarea(id);
             return new JsonResult(ret);
         }
+        /// <summary>
+        /// 获取单条
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public Reservoirarea Find(int id)
+        {
+            return reservoirareaDAL.Find(id);
+        }
     }
 }
