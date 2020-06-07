@@ -37,13 +37,17 @@ namespace WMS_API.Controllers
         }
 
         // PUT: api/ChuKu/5
-        [HttpPut("{id}")]
-        public int Put([FromBody] Values m)
+        [HttpPost]
+        public int Puts([FromBody] Values m)
         {
             m.times = DateTime.Now;
-                   dal.Upte(m);
+            if (dal.Uptee(m) == 0)
+            {
+                return 0;
+            }
+            dal.Upte(m);
             return dal.Uptee(m);
-            
+
         }
 
         // DELETE: api/ApiWithActions/5
