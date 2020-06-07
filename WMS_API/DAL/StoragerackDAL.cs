@@ -13,7 +13,7 @@ namespace DAL
         /// <returns></returns>
         public List<Storagerack> ShowStoragerack()
         {
-            string str = "select * from Storagerack s join Reservoirarea r on s.ReservoirAreaId=r. ReservoirAreaId join Warehouse w on r.WarehouseId=w.WarehouseId";
+            string str = "select s.StorageRackId StorageRackId,s.StorageRackName,s.ReservoirAreaId,s.Remark,r.ReservoirAreaName,s.CreateDate CreateDate, u.UserNickname UserNickname2, u.UserNickname UserNickname, s.ModifiedDate ModifiedDate, s.CreateBy CreateBy, s.ModifiedBy ModifiedBy from Storagerack s join Reservoirarea r on s.ReservoirAreaId = r.ReservoirAreaId join Warehouse w on r.WarehouseId = w.WarehouseId join UserInfo u on w.CreateBy = u.UserId";
             return DBHelper.GetToList<Storagerack>(str);
         }
         /// <summary>
@@ -23,7 +23,7 @@ namespace DAL
         /// <returns></returns>
         public int AddStoragerack(Storagerack sRack)
         {
-            string str = $"insert into Storagerack values('{sRack.StorageRackName}',{sRack.ReservoirAreaId},0,'{sRack.Remark}',1,GETDATE(),1,GETDATE())";
+            string str = $"insert into Storagerack values('{sRack.StorageRackName}','{sRack.ReservoirAreaId}',0,'{sRack.Remark}','{sRack.CreateBy}',GETDATE(),'{sRack.ModifiedBy}',GETDATE())";
             return DBHelper.ExecuteNonQuery(str);
         }
         /// <summary>
@@ -44,8 +44,18 @@ namespace DAL
         /// <returns></returns>
         public int DelStoragerack(string id)
         {
-            string str = $"update Storagerack set IsDel=1 where StoragerackId in(" + id + ")";
+            string str = $"delete from Storagerack where StorageRackId in(" + id + ")";
             return DBHelper.ExecuteNonQuery(str);
+        }
+        /// <summary>
+        /// 查询单条
+        /// </summary>
+        /// <returns></returns>
+        public Storagerack Find(int id)
+        {
+            //string str = "select s.StorageRackId StorageRackId,s.StorageRackName,s.ReservoirAreaId,s.Remark,s.CreateDate CreateDate, u.UserNickname UserNickname2, u.UserNickname UserNickname, s.ModifiedDate ModifiedDate, s.CreateBy CreateBy, s.ModifiedBy ModifiedBy from Storagerack s join Reservoirarea r on s.ReservoirAreaId = r.ReservoirAreaId join Warehouse w on r.WarehouseId = w.WarehouseId join UserInfo u on w.CreateBy = u.UserId" + id;
+            string str = "select * from Storagerack where StorageRackId=" + id;
+            return DBHelper.GetToList<Storagerack>(str)[0];
         }
     }
 }

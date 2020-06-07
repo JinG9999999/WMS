@@ -29,7 +29,7 @@ namespace DAL
         //修改
         public int Upt(Stockindetail m)
         {
-            string sql = string.Format("update Stockindetail set Status='{1}',PlanInQty='{2}',ActInQty='{3}',StoragerackId='{4}',AuditinId='{5}',AuditinTime='{6}',Remark='{7}',CreateBy='{8}',CreateDate='{9}',ModifiedBy='{10}',ModifiedDate='{11}' where StockInDetailId={12}", m.StockInId, m.Status, m.PlanInQty, m.ActInQty, m.StoragerackId, m.AuditinId, m.AuditinTime, m.Remark, m.CreateBy, m.CreateDate, m.ModifiedBy, m.ModifiedDate,m.StockInDetailId);
+            string sql = string.Format("update Stockindetail set PlanInQty='{0}',ActInQty='{1}',StoragerackId='{2}',AuditinId='{3}',AuditinTime='{4}',Remark='{5}',CreateBy='{6}',CreateDate='{7}',ModifiedBy='{8}',ModifiedDate='{9}' where StockInDetailId={10}", m.PlanInQty, m.ActInQty, m.StoragerackId, m.AuditinId, m.AuditinTime, m.Remark, m.CreateBy, m.CreateDate, m.ModifiedBy, m.ModifiedDate,m.StockInDetailId);
             return DBHelper.ExecuteNonQuery(sql);
         }
         //删除

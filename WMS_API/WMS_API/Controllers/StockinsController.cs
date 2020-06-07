@@ -74,7 +74,7 @@ namespace WMS_API.Controllers
         {
             System.Random rdn = new System.Random();
             m.OrderNo = Convert.ToInt32(rdn.Next(99999999).ToString().PadLeft(8, '0'));
-            m.StockInStatus = 1;
+            m.StockInStatus = 0;
             m.CreateDate = DateTime.Now;
             return new JsonResult(dal.Add(m));
         }
@@ -85,7 +85,6 @@ namespace WMS_API.Controllers
         {
             System.Random rdn = new System.Random();
             m.OrderNo = Convert.ToInt32(rdn.Next(99999999).ToString().PadLeft(8, '0'));
-            m.StockInStatus = 1;
             m.CreateDate = DateTime.Now;
             return dal.Upt(m);
         }

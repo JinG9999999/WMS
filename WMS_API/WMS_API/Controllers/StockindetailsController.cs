@@ -34,7 +34,7 @@ namespace WMS_API.Controllers
         [HttpPost]
         public int Post([FromBody] Stockindetail m)
         {
-            m.Status = 1;
+            m.Status = 0;
             m.CreateDate = DateTime.Now;
             return dal.Add(m);
         }
@@ -43,7 +43,6 @@ namespace WMS_API.Controllers
         [HttpPost]
         public int Puts(Stockindetail m)
         {
-            m.Status = 1;
             m.CreateDate = DateTime.Now;
             return dal.Upt(m);
         }

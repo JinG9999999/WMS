@@ -22,24 +22,29 @@ namespace WMS_API.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public PageWarehouse ShowWarehouse( Nullable<DateTime> time1, Nullable<DateTime> time2, int CurrentPage = 1)
+        public PageWarehouse ShowWarehouse(string name = "", int CurrentPage = 1, int Pagesize = 5)
         {
             var list = warehouseDAL.ShowWarehouse();
-            if (time1 != null && time2 != null)
+            //if (time1 != null && time2 != null)
+            //{
+            //    list = list.Where(s => s.CreateDate >= time1 && s.CreateDate <= time2).ToList();
+            //}
+            if (!string.IsNullOrEmpty(name))
             {
-                list = list.Where(s => s.CreateDate >= time1 && s.CreateDate <= time2).ToList();
+                list = list.Where(s => s.WarehouseName.Contains(name)).ToList();
             }
+            
             PageWarehouse ps = new PageWarehouse();//实例化
 
             ps.TotalCount = list.Count();//总记录数
 
-            if (ps.TotalCount % 10 == 0)//计算总页数
+            if (ps.TotalCount % Pagesize == 0)//计算总页数
             {
-                ps.TotalPage = ps.TotalCount / 10;
+                ps.TotalPage = ps.TotalCount / Pagesize;
             }
             else
             {
-                ps.TotalPage = (ps.TotalCount / 10) + 1;
+                ps.TotalPage = (ps.TotalCount / Pagesize) + 1;
             }
             //纠正index页
             if (CurrentPage < 1)
@@ -53,7 +58,7 @@ namespace WMS_API.Controllers
             //赋值index为当前页
             ps.CurrentPage = CurrentPage;
             //linq查询
-            ps.warehouses = list.Skip(10 * (CurrentPage - 1)).Take(10).ToList();
+            ps.warehouses = list.Skip(Pagesize * (CurrentPage - 1)).Take(Pagesize).ToList();
             return ps;
         }
 
@@ -86,7 +91,7 @@ namespace WMS_API.Controllers
         }
 
         /// <summary>
-        /// 
+        /// 删除仓库
         /// </summary>
         /// <param name="id"></param>
         [HttpDelete("{id}")]
@@ -95,5 +100,16 @@ namespace WMS_API.Controllers
             int ret = warehouseDAL.DelWarehouse(id);
             return new JsonResult(ret);
         }
+        /// <summary>
+        /// 获取单条
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public Warehouse Find(int id)
+        {
+            return warehouseDAL.Find(id);
+        }
+
     }
 }
