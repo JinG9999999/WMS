@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Four\\WMS_API\\WMS_API\\DAL\\DAL.csproj": {}
+    "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "D:\\Four\\WMS_API\\WMS_API\\DAL\\DAL.csproj": {
+    "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Four\\WMS_API\\WMS_API\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\Four\\WMS_API\\WMS_API\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\张凯\\.nuget\\packages\\",
-        "outputPath": "D:\\Four\\WMS_API\\WMS_API\\DAL\\obj\\",
+        "projectPath": "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\o\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\张凯\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\o\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Four\\WMS_API\\WMS_API\\Model\\Model.csproj": {
-                "projectPath": "D:\\Four\\WMS_API\\WMS_API\\Model\\Model.csproj"
+              "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\Model\\Model.csproj"
               }
             }
           }
@@ -74,30 +74,36 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Four\\WMS_API\\WMS_API\\Model\\Model.csproj": {
+    "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Four\\WMS_API\\WMS_API\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "D:\\Four\\WMS_API\\WMS_API\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\张凯\\.nuget\\packages\\",
-        "outputPath": "D:\\Four\\WMS_API\\WMS_API\\Model\\obj\\",
+        "projectPath": "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\o\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\张凯\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\o\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -131,12 +137,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

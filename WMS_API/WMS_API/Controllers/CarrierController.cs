@@ -28,7 +28,7 @@ namespace WMS_API.Controllers
             {
                 list = list.Where(s => s.CreateDate >= time1 && s.CreateDate <= time2).ToList();
             }
-            if (Name!="")
+            if (Name!=null)
             {
                 list = list.Where(s => s.CarrierName.Contains(Name)).ToList();
             }
