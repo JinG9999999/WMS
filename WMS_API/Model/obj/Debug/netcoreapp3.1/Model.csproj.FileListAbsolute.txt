@@ -23,6 +23,7 @@ C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\M
 C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.dll
 C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.pdb
 C:\Users\DELL\Desktop\克隆api - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
+L:\实训二\仓库管理系统项目---4组api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
 C:\Users\o\Desktop\实训二项目\第四组项目API\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.deps.json
 C:\Users\o\Desktop\实训二项目\第四组项目API\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.dll
 C:\Users\o\Desktop\实训二项目\第四组项目API\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.pdb
@@ -32,5 +33,21 @@ C:\Users\o\Desktop\实训二项目\第四组项目API\WMS_API\Model\obj\Debug\ne
 C:\Users\o\Desktop\实训二项目\第四组项目API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
 C:\Users\o\Desktop\实训二项目\第四组项目API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.dll
 C:\Users\o\Desktop\实训二项目\第四组项目API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.pdb
-D:\大实训2  仓库管理系统\WMS API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
-L:\实训二\仓库管理系统项目---4组api\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
+D:\Four\WMS_API\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.deps.json
+D:\Four\WMS_API\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.dll
+D:\Four\WMS_API\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.pdb
+D:\Four\WMS_API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
+D:\Four\WMS_API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
+D:\Four\WMS_API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
+D:\Four\WMS_API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
+D:\Four\WMS_API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.dll
+D:\Four\WMS_API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.pdb
+C:\Users\o\Desktop\实训二项目\Four\WMS_API\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.deps.json
+C:\Users\o\Desktop\实训二项目\Four\WMS_API\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\o\Desktop\实训二项目\Four\WMS_API\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\o\Desktop\实训二项目\Four\WMS_API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
+C:\Users\o\Desktop\实训二项目\Four\WMS_API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
+C:\Users\o\Desktop\实训二项目\Four\WMS_API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
+C:\Users\o\Desktop\实训二项目\Four\WMS_API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
+C:\Users\o\Desktop\实训二项目\Four\WMS_API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.dll
+C:\Users\o\Desktop\实训二项目\Four\WMS_API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.pdb

@@ -11,16 +11,16 @@ using Microsoft.AspNetCore.Cors;
 namespace WMS_API.Controllers
 {
     [EnableCors("wms")]
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class StockoutdetailsController : ControllerBase
     {
         StockoutdetailDAL dal = new StockoutdetailDAL();
         // GET: api/Stockouts
         [HttpGet]
-        public List<StockoutDetail> Gets()
+        public List<StockoutDetail> Gets(int StockoutIds)
         {
-            return dal.Show();
+            return dal.Show().Where(s => s.StockOutId == StockoutIds).ToList();
         }
 
         // GET: api/Stockouts/5
@@ -34,16 +34,16 @@ namespace WMS_API.Controllers
         [HttpPost]
         public int Post([FromBody] StockoutDetail m)
         {
-            m.Status = false;
+            m.Status = 1;
             m.CreateDate = DateTime.Now;
             return dal.Add(m);
         }
 
         // PUT: api/Stockouts/5
-        [HttpPut("{id}")]
-        public int Put([FromBody] StockoutDetail stockoutDetail)
+        [HttpPost]
+        public int Putss(StockoutDetail stockoutDetail)
         {
-            stockoutDetail.Status = false;
+            stockoutDetail.Status = 1;
             stockoutDetail.CreateDate = DateTime.Now;
 
             return dal.Upt(stockoutDetail);

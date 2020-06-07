@@ -8,19 +8,19 @@ using Model;
 
 namespace dal
 {
-   public class SupplierDal
+    public class SupplierDal
     {
         //显示供应商
         public List<Supplier> SupplierShow()
         {
-            string str = "select * from Supplier s join UserInfo u on s.CreateBy=u.UserId where s.IsDel=0";
-            
+            string str = "select * from Supplier s join UserInfo u on s.CreateBy=u.CreateBy where c.IsDel=0";
+
             return DBHelper.GetToList<Supplier>(str);
         }
         //反填供应商
         public Supplier Find(int id)
         {
-            string str = $"select * from Supplier s join UserInfo u on s.CreateBy=u.UserId where s.SupplierId={id}";
+            string str = $"select * from Supplier s join UserInfo u on s.CreateBy=u.CreateBy where c.SupplierId={id}";
 
             return DBHelper.GetToList<Supplier>(str)[0];
         }
@@ -42,7 +42,7 @@ namespace dal
         //新增供应商
         public int AddSupplier(Supplier s)
         {
-            string str = $"insert into Supplier values('{s.SupplierName}','{s.Address}','{s.Tel}','{s.SupplierPerson}',{s.SupplierLevel},'{s.Email}',{s.IsDel},'{s.Remark}',{s.CreateBy},getdate(),{s.CreateBy},getdate()";
+            string str = $"insert into Supplier values('{s.SupplierName}','{s.Address}','{s.Tel}','{s.SupplierPerson}',{s.SupplierLevel},'{s.Email}',{s.IsDel},'{s.Remark}',{s.CreateBy},getdate(),null,null)";
             return DBHelper.ExecuteNonQuery(str);
         }
     }
