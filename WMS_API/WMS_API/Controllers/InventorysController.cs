@@ -11,14 +11,14 @@ using Model;
 namespace WMS_API.Controllers
 {
     [EnableCors("wms")]
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class InventorysController : ControllerBase
     {
         InventoryDAL dal = new InventoryDAL();
         // GET: api/Inventorys
         [HttpGet]
-        public PageStues Get(int PageSize, Nullable<DateTime> time1, Nullable<DateTime> time2, int type =0, int CurrentPage=1)
+        public PageStues Getsss(Nullable<DateTime> time1, Nullable<DateTime> time2, int type =0, int CurrentPage=1, int PageSize = 5)
         {
             var list = dal.Show();
             if (time1 != null && time2 != null)

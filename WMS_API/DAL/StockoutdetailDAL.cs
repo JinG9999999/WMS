@@ -11,13 +11,13 @@ namespace DAL
         //显示出库审核列表
         public List<StockoutDetail> Show()
         {
-            string sql = "select * from Stockin";
+            string sql = "select * from StockoutDetail";
             return DBHelper.GetToList<StockoutDetail>(sql);
         }
         //添加出库审核
         public int Add(StockoutDetail m)
         {
-            string sql = string.Format("insert into Stockin values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}')", m.StockOutId, m.Status, m.PlanOutQty, m.ActOutQty, m.StoragerackId, m.AuditinId, m.AuditinTime, m.Remark, m.CreateBy, m.CreateDate, m.ModifiedBy, m.ModifiedDate);
+            string sql = string.Format("insert into StockoutDetail values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}')", m.StockOutId, m.Status, m.PlanOutQty, m.ActOutQty, m.StoragerackId, m.AuditinId, m.AuditinTime, m.Remark, m.CreateBy, m.CreateDate, m.ModifiedBy, m.ModifiedDate);
             return DBHelper.ExecuteNonQuery(sql);
         }
         //修改反填
@@ -29,7 +29,7 @@ namespace DAL
         //修改
         public int Upt(StockoutDetail m)
         {
-            string sql = string.Format("update Stockoutdetail set StockOutId='{0}',Status='{1}',PlanInQty='{2}',ActInQty='{3}',StoragerackId='{4}',AuditinId='{5}',AuditinTime='{6}',Remark='{7}',CreateBy='{8}',CreateDate='{9}',ModifiedBy='{10}',ModifiedDate='{11}' where StockInDetailId={12})", m.StockOutId, m.Status, m.PlanOutQty, m.ActOutQty, m.StoragerackId, m.AuditinId, m.AuditinTime, m.Remark, m.CreateBy, m.CreateDate, m.ModifiedBy, m.ModifiedDate, m.StockInDetailId);
+            string sql = string.Format("update Stockoutdetail set PlanOutQty='{0}',ActOutQty='{1}',StoragerackId='{2}',AuditinId='{3}',AuditinTime='{4}',Remark='{5}',CreateBy='{6}',CreateDate='{7}',ModifiedBy='{8}',ModifiedDate='{9}' where StockInDetailId={10}", m.PlanOutQty, m.ActOutQty, m.StoragerackId, m.AuditinId, m.AuditinTime, m.Remark, m.CreateBy, m.CreateDate, m.ModifiedBy, m.ModifiedDate, m.StockInDetailId);
             return DBHelper.ExecuteNonQuery(sql);
         }
         //删除

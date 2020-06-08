@@ -11,21 +11,21 @@ using Microsoft.AspNetCore.Cors;
 namespace WMS_API.Controllers
 {
     [EnableCors("wms")]
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class StockoutsController : ControllerBase
     {
         StockoutDAL dal = new StockoutDAL();
         // GET: api/Stockoutdetails
         [HttpGet]
-        public PageStus Gets(int PageSize, Nullable<DateTime> time1, Nullable<DateTime> time2, string type = "", int state = 0, int CurrentPage=1)
+        public PageStus Getes(Nullable<DateTime> time1, Nullable<DateTime> time2, string type = "", int state = 0, int CurrentPage=1, int PageSize = 10)
         {
             var list = dal.Show();
             if (time1 != null && time2 != null)
             {
                 list = list.Where(s => s.CreateDate >= time1 && s.CreateDate <= time2).ToList();
             }
-            if (string.IsNullOrEmpty(type))
+            if (!string.IsNullOrEmpty(type))
             {
                 list = list.Where(s => s.StockOutType == type).ToList();
             }
@@ -73,37 +73,37 @@ namespace WMS_API.Controllers
         public int Post([FromBody] Stockout m)
         {
             System.Random rdn = new System.Random();
-            m.OrderNo = rdn.Next(99999999).ToString().PadLeft(8, '0');
-            m.StockOutStatus = 1;
+            m.OrderNo = Convert.ToInt32(rdn.Next(99999999).ToString().PadLeft(8, '0'));
+            m.StockOutStatus = 0;
             m.CreateDate = DateTime.Now;
             return dal.Add(m);
         }
 
         // PUT: api/Stockoutdetails/5
-        [HttpPut("{id}")]
+        [HttpPost]
         public int Put([FromBody] Stockout m)
         {
             System.Random rdn = new System.Random();
-            m.OrderNo = rdn.Next(99999999).ToString().PadLeft(8, '0');
-            m.StockOutStatus = 1;
+            m.OrderNo = Convert.ToInt32(rdn.Next(99999999).ToString().PadLeft(8, '0'));
             m.CreateDate = DateTime.Now;
             return dal.Upt(m);
         }
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete]
-        public int Delete(string id)
+        public int Delete(int id)
         {
-            int t = 0;
-            id = id.Substring(0, id.Length - 1);//删除字符串最后一个字符
-            string[] datalist = id.Split(',');
-            foreach (var item in datalist)
-            {
-                int daa = int.Parse(item);
-                //调用删除方法
-                t = t + dal.Del(daa);
-            }
-            return t;
+            return dal.Del(id);
+            //int t = 0;
+            //id = id.Substring(0, id.Length - 1);//删除字符串最后一个字符
+            //string[] datalist = id.Split(',');
+            //foreach (var item in datalist)
+            //{
+            //    int daa = int.Parse(item);
+            //    //调用删除方法
+            //    t = t + dal.Del(daa);
+            //}
+            //return t;
         }
     }
 }

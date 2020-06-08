@@ -46,8 +46,17 @@ namespace DAL
         /// <returns></returns>
         public int DelWarehouse(string id)
         {
-            string str = $"update Warehouse set IsDel=1 where WarehouseId in(" + id + ")";
+            string str = $"delete from Warehouse where WarehouseId in(" + id + ")";
             return DBHelper.ExecuteNonQuery(str);
+        }
+        /// <summary>
+        /// 查询单条
+        /// </summary>
+        /// <returns></returns>
+        public Warehouse Find(int id)
+        {
+            string str = "select * from Warehouse w join UserInfo u on u.UserId=w.CreateBy join UserInfo u1 on u1.UserId=w.ModifiedBy where WarehouseId="+id;
+            return DBHelper.GetToList<Warehouse>(str)[0];
         }
     }
 }
