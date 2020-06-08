@@ -58,15 +58,15 @@ C:\Users\o\Desktop\实训二项目\Four\WMS_API\WMS_API\DAL\obj\Debug\netcoreapp
 C:\Users\o\Desktop\实训二项目\Four\WMS_API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete
 C:\Users\o\Desktop\实训二项目\Four\WMS_API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.dll
 C:\Users\o\Desktop\实训二项目\Four\WMS_API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
-C:\Users\DELL\Desktop\完整版\克隆api - 副本 - 副本\WMS_API\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
-C:\Users\DELL\Desktop\完整版\克隆api - 副本 - 副本\WMS_API\DAL\bin\Debug\netcoreapp3.1\DAL.dll
-C:\Users\DELL\Desktop\完整版\克隆api - 副本 - 副本\WMS_API\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
-C:\Users\DELL\Desktop\完整版\克隆api - 副本 - 副本\WMS_API\DAL\bin\Debug\netcoreapp3.1\Model.dll
-C:\Users\DELL\Desktop\完整版\克隆api - 副本 - 副本\WMS_API\DAL\bin\Debug\netcoreapp3.1\Model.pdb
-C:\Users\DELL\Desktop\完整版\克隆api - 副本 - 副本\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
-C:\Users\DELL\Desktop\完整版\克隆api - 副本 - 副本\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
-C:\Users\DELL\Desktop\完整版\克隆api - 副本 - 副本\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
-C:\Users\DELL\Desktop\完整版\克隆api - 副本 - 副本\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
-C:\Users\DELL\Desktop\完整版\克隆api - 副本 - 副本\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete
-C:\Users\DELL\Desktop\完整版\克隆api - 副本 - 副本\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.dll
-C:\Users\DELL\Desktop\完整版\克隆api - 副本 - 副本\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\DAL\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\DAL\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csprojAssemblyReference.cache
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\DAL\obj\Debug\netcoreapp3.1\DAL.pdb

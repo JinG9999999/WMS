@@ -44,7 +44,7 @@ namespace dal
         //新增客户
         public int AddCustomer(Customer c)
         {
-            string str = $"insert into Customer values('{c.CustomerName}','{c.Address}','{c.Tel}','{c.CarrierPerson}',{c.CarrierLevel},'{c.Email}',{c.IsDel},'{c.Remark}',{c.CreateBy},getdate(),{c.CreateBy},getdate())";
+            string str = $"insert into Customer values('{c.CustomerName}','{c.Address}','{c.Tel}','{c.CarrierPerson}',{c.CarrierLevel},'{c.Email}',0,'{c.Remark}',{c.ModifiedBy},getdate(),{c.ModifiedBy},getdate())";
             return DBHelper.ExecuteNonQuery(str);
         }
     }
