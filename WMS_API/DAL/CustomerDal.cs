@@ -21,7 +21,7 @@ namespace dal
         //反填客户
         public Customer Find(int id)
         {
-            string str = $"select * from Customer c join UserInfo u on c.CreateBy=u.UserId where c.CustomerId={id}";
+            string str = $"select * from Customer  where CustomerId={id}";
 
             return DBHelper.GetToList<Customer>(str)[0];
         }

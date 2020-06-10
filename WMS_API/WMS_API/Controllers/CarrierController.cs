@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Model;
 using DAL;
 using dal;
+using Microsoft.Extensions.Logging;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -15,7 +16,14 @@ namespace WMS_API.Controllers
     [ApiController]
     public class CarrierController : ControllerBase
     {
-        CarrierDal dal = new CarrierDal(); 
+        CarrierDal dal = new CarrierDal();
+
+        private readonly ILogger<Carrier> _logger;
+
+        public CarrierController(ILogger<Carrier> logger)
+        {
+            _logger = logger;
+        }
 
         //显示承运商
         // GET: api/<CarrierController>
@@ -76,6 +84,7 @@ namespace WMS_API.Controllers
         [HttpPost]
         public int Post(Carrier c)
         {
+            _logger.LogInformation(c.ModifiedBy + $"新增承运商数据完成，新增承运商编号为{ c.CarrierId}");
             return dal.AddCarrier(c);
         }
 
@@ -84,6 +93,8 @@ namespace WMS_API.Controllers
         [HttpPut("{id}")]
         public int Put(Carrier c)
         {
+
+            _logger.LogInformation(c.ModifiedBy+$"修改承运商数据完成，修改承运商编号为{ c.CarrierId}");
             return dal.UptCarrier(c);
         }
 
@@ -92,6 +103,7 @@ namespace WMS_API.Controllers
         [HttpDelete("{id}")]
         public int Upt(string id)
         {
+            _logger.LogInformation($"删除承运商数据完成，删除承运商编号为{id}");
             return dal.DelCarrier(id);
         }
     }

@@ -20,7 +20,7 @@ namespace dal
         //反填承运商
         public Carrier Find(int id)
         {
-            string str = $"select * from Carrier c join UserInfo u on c.CreateBy=u.UserId where c.CarrierId={id}";
+            string str = $"select * from Carrier  where CarrierId={id}";
             return DBHelper.GetToList<Carrier>(str)[0];
         }
 
@@ -41,7 +41,7 @@ namespace dal
         //新增承运商
         public int AddCarrier(Carrier c)
         {
-            string str = $"insert into Carrier values('{c.CarrierName}','{c.Address}','{c.Tel}','{c.CarrierPerson}',{c.CarrierLevel},'{c.Email}',0,'{c.Remark}',{c.CreateBy},getdate(),{c.CreateBy},getdate())";
+            string str = $"insert into Carrier values('{c.CarrierName}','{c.Address}','{c.Tel}','{c.CarrierPerson}',{c.CarrierLevel},'{c.Email}',0,'{c.Remark}','{c.ModifiedBy}',getdate(),'{c.ModifiedBy}',getdate())";
             return DBHelper.ExecuteNonQuery(str);
         }
 
