@@ -45,7 +45,7 @@ namespace DAL
         //删除库存移动
         public int InventorymoveDel(int id)
         {
-            string sql = "delete from Inventorymove where InventorymoveId" + id;
+            string sql = "delete from Inventorymove where InventorymoveId=" + id;
             return DBHelper.ExecuteNonQuery(sql);
         }
 
