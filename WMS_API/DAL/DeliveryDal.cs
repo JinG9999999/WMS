@@ -9,7 +9,7 @@ namespace DAL
         //显示库存记录
         public List<Inventoryrecord> InventoryrecordShow()
         {
-            string sql = "select * from Inventoryrecord join Inventory on Inventory.InventoryId = Inventoryrecord.StockInDetailId join Storagerack on Storagerack.WarehouseId = Inventoryrecord.InventoryrecordId";
+            string sql = "select * from Inventoryrecord join Inventory on Inventory.InventoryId = Inventoryrecord.StockInDetailId join Storagerack on Storagerack.ReservoirAreaId = Inventoryrecord.InventoryrecordId";
             return DBHelper.GetToList<Inventoryrecord>(sql);
         }
         //显示发货记录
@@ -21,7 +21,7 @@ namespace DAL
         //显示库存移动
         public List<Inventorymove> InventorymoveShow()
         {
-            string sql = "select * from Inventorymove join Storagerack on Storagerack.WarehouseId = Inventorymove.InventorymoveId";
+            string sql = "select * from Inventorymove join Storagerack on Storagerack.ReservoirAreaId = Inventorymove.InventorymoveId";
             return DBHelper.GetToList<Inventorymove>(sql);
         }
         //添加库存移动
@@ -45,7 +45,7 @@ namespace DAL
         //删除库存移动
         public int InventorymoveDel(int id)
         {
-            string sql = "delete from Inventorymove where InventorymoveId" + id;
+            string sql = "delete from Inventorymove where InventorymoveId=" + id;
             return DBHelper.ExecuteNonQuery(sql);
         }
 
