@@ -13,7 +13,7 @@ namespace dal
         //显示承运商
         public List<Carrier> CarrierShow()
         {
-            string str = "select * from Carrier c join UserInfo u on c.CreateBy=u.UserId where c.IsDel=0";
+            string str = "select * from Carrier  where IsDel=0";
             return DBHelper.GetToList<Carrier>(str);
         }
 
@@ -34,7 +34,7 @@ namespace dal
         //修改承运商信息
         public int UptCarrier(Carrier c)
         {
-            string str = $"update Carrier set CarrierName='{c.CarrierName}',[Address]='{c.Address}',Tel='{c.Tel}',CarrierPerson='{c.CarrierPerson}',Email='{c.Email}',Remark='{c.Remark}',ModifiedBy={c.ModifiedBy},ModifiedDate=GETDATE() where CarrierId={c.CarrierId}";
+            string str = $"update Carrier set CarrierName='{c.CarrierName}',[Address]='{c.Address}',Tel='{c.Tel}',CarrierPerson='{c.CarrierPerson}',Email='{c.Email}',Remark='{c.Remark}',ModifiedBy='{c.ModifiedBy}',ModifiedDate=GETDATE() where CarrierId={c.CarrierId}";
             return DBHelper.ExecuteNonQuery(str);
         }
 
