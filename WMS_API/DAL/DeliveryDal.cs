@@ -21,7 +21,7 @@ namespace DAL
         //显示库存移动
         public List<Inventorymove> InventorymoveShow()
         {
-            string sql = "select * from Inventorymove join Storagerack on Storagerack.ReservoirAreaId = Inventorymove.InventorymoveId";
+            string sql = "select * from Inventorymove join Storagerack on Storagerack.StorageRackId = Inventorymove.SourceStoragerackId";
             return DBHelper.GetToList<Inventorymove>(sql);
         }
         //添加库存移动
