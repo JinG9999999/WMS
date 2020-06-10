@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using DAL;
 using Model;
 using dal;
+using Microsoft.Extensions.Logging;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -17,6 +18,12 @@ namespace WMS_API.Controllers
     {
         SupplierDal dal = new SupplierDal();
 
+        private readonly ILogger<Supplier> _logger;
+
+        public SupplierController(ILogger<Supplier> logger)
+        {
+            _logger = logger;
+        }
         //显示供应商
         // GET: api/<SupplierController>
         [HttpGet]
@@ -77,6 +84,7 @@ namespace WMS_API.Controllers
         [HttpPost]
         public int Post(Supplier s)
         {
+            _logger.LogInformation(s.ModifiedBy + $"新增供应商数据完成，新增供应商编号为{ s.SupplierId}");
             return dal.AddSupplier(s);
         }
 
@@ -86,6 +94,7 @@ namespace WMS_API.Controllers
         [HttpPut("{id}")]
         public int Put(Supplier s)
         {
+            _logger.LogInformation(s.ModifiedBy + $"修改供应商数据完成，修改供应商编号为{ s.SupplierId}");
             return dal.UptSupplier(s);
         }
 
@@ -95,6 +104,7 @@ namespace WMS_API.Controllers
         [HttpDelete("{id}")]
         public int UPT(string id)
         {
+            _logger.LogInformation($"删除供应商数据完成，删除供应商编号为{ id}");
             return dal.DelSupplier(id);
         }
     }

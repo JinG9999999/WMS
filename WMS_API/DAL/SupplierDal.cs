@@ -20,7 +20,7 @@ namespace dal
         //反填供应商
         public Supplier Find(int id)
         {
-            string str = $"select * from Supplier s join UserInfo u on s.CreateBy=u.UserId where s.SupplierId={id}";
+            string str = $"select * from Supplier  where SupplierId={id}";
 
             return DBHelper.GetToList<Supplier>(str)[0];
         }

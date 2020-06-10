@@ -764,8 +764,6 @@ C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\bin\Debug\netcor
 C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.csprojAssemblyReference.cache
 C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.AssemblyInfoInputs.cache
 C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.AssemblyInfo.cs
-C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.csproj.CoreCompileInputs.cache
-C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.RazorTargetAssemblyInfo.cache
 C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.csproj.CopyComplete
 C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\staticwebassets\WMS_API.StaticWebAssets.Manifest.cache
@@ -773,3 +771,9 @@ C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\obj\Debug\netcor
 C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.dll
 C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.pdb
 C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.genruntimeconfig.cache
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\nlog.config
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.csproj.CoreCompileInputs.cache
+C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.MvcApplicationPartsAssemblyInfo.cache
