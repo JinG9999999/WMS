@@ -60,3 +60,12 @@ C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\Model\obj\Debug\netcorea
 C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.dll
 C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.pdb
 D:\大实训2  仓库管理系统\WMS API\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\WMS仓库管理系统\克隆api - 副本 - 副本\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.deps.json
+C:\Users\DELL\Desktop\WMS仓库管理系统\克隆api - 副本 - 副本\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.dll
+C:\Users\DELL\Desktop\WMS仓库管理系统\克隆api - 副本 - 副本\WMS_API\Model\bin\Debug\netcoreapp3.1\Model.pdb
+C:\Users\DELL\Desktop\WMS仓库管理系统\克隆api - 副本 - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csprojAssemblyReference.cache
+C:\Users\DELL\Desktop\WMS仓库管理系统\克隆api - 副本 - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\WMS仓库管理系统\克隆api - 副本 - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfoInputs.cache
+C:\Users\DELL\Desktop\WMS仓库管理系统\克隆api - 副本 - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.AssemblyInfo.cs
+C:\Users\DELL\Desktop\WMS仓库管理系统\克隆api - 副本 - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.dll
+C:\Users\DELL\Desktop\WMS仓库管理系统\克隆api - 副本 - 副本\WMS_API\Model\obj\Debug\netcoreapp3.1\Model.pdb

@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\DAL\\DAL.csproj": {}
+    "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\DAL\\DAL.csproj": {
+    "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\o\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\DAL\\obj\\",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\o\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -32,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\Model\\Model.csproj"
+              "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj"
               }
             }
           }
@@ -47,6 +45,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
             "Microsoft.AspNetCore.Mvc": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -58,6 +60,18 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.0-preview.4.20220.10, )"
+            },
+            "ServiceStack.Redis": {
+              "target": "Package",
+              "version": "[5.9.0, )"
+            },
+            "StackExchange.Redis.Extensions": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[5.0.0-preview.4.20251.6, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -74,38 +88,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\Model\\Model.csproj": {
+    "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\o\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\o\\Desktop\\实训二项目\\Four\\WMS API\\WMS_API\\Model\\obj\\",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\o\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -127,6 +133,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
+            "ServiceStack.Redis": {
+              "target": "Package",
+              "version": "[5.9.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -137,18 +153,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

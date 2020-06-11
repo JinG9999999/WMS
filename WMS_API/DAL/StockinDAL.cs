@@ -1,19 +1,67 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using Dapper;
 using Model;
+using ServiceStack;
 
 namespace DAL
 {
     public class StockinDAL
     {
-        //显示入库库存列表
-        public List<Stockin> Show()
+        static SqlConnection conn = new SqlConnection("Data Source=.;Initial Catalog=WMS;Integrated Security=True");
+        public PageStu Show(Stockin person,int CurrentPage=1,int PageSize=10)
         {
-            string sql = "select * from Stockin";
-            return DBHelper.GetToList<Stockin>(sql);
+            using (IDbConnection connection = new SqlConnection(conn.ConnectionString))
+            {
+                var sql = @"select * from Stockin where StockInStatus=" + person.StockInStatus;
+                if (person.StockInType!="")
+                {
+                    sql += " and StockInType=@stockInType";
+                }
+                if (person.CreateDate!="" && person.ModifiedDate!="")
+                {
+                    sql += "and CreateDate>=@createDate and ModifiedDate<=@modifiedDate";
+                }
+                
+                var list= connection.Query<Stockin>(sql,new { stockInType=person.StockInType, createDate=person.CreateDate, modifiedDate=person.ModifiedDate }).ToList();
+                PageStu ps = new PageStu();//实例化
+
+                ps.TotalCount = list.Count();//总记录数
+
+                if (ps.TotalCount % PageSize == 0)//计算总页数
+                {
+                    ps.TotalPage = ps.TotalCount / PageSize;
+                }
+                else
+                {
+                    ps.TotalPage = (ps.TotalCount / PageSize) + 1;
+                }
+                //纠正index页
+                if (CurrentPage < 1)
+                {
+                    CurrentPage = 1;
+                }
+                if (CurrentPage > ps.TotalPage)
+                {
+                    CurrentPage = ps.TotalPage;
+                }
+                //赋值index为当前页
+                ps.CurrentPage = CurrentPage;
+                //linq查询
+                ps.stockins = list.Skip(PageSize * (CurrentPage - 1)).Take(PageSize).ToList();
+                return ps;
+            }
         }
+        //显示入库库存列表
+        //public List<Stockin> Show()
+        //{
+        //    string sql = "select * from Stockin";
+        //    return DBHelper.GetToList<Stockin>(sql);
+        //}
         //添加入库库存
         public int Add(Stockin m)
         {
