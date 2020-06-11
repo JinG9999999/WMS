@@ -24,10 +24,11 @@ namespace dal
             return DBHelper.GetToList<Carrier>(str)[0];
         }
 
+
         //修改承运商(删除操作)
-        public int DelCarrier(string id)
+        public int DelCarrier(Carrier c)
         {
-            string str = $"update Carrier set IsDel=1 where CarrierId in ({id})";
+            string str = $"update Carrier set IsDel=1 ,ModifiedBy='{c.ModifiedBy}', ModifiedDate=getdate()  where CarrierId in ({c.CarrierId})";
             return DBHelper.ExecuteNonQuery(str);
         }
 
@@ -45,5 +46,11 @@ namespace dal
             return DBHelper.ExecuteNonQuery(str);
         }
 
+        //查看删除记录
+        public List<Carrier> DelShow()
+        {
+            string str = "select * from Carrier where IsDel=1";
+            return DBHelper.GetToList<Carrier>(str);
+        }
     }
 }

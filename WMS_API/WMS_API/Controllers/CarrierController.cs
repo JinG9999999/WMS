@@ -101,10 +101,12 @@ namespace WMS_API.Controllers
         //修改承运商状态为已删除
         // DELETE api/<CarrierController>/5
         [HttpDelete("{id}")]
-        public int Upt(string id)
+        public int Upt(int id,Carrier c)
         {
-            _logger.LogInformation($"删除承运商数据完成，删除承运商编号为{id}");
-            return dal.DelCarrier(id);
+            
+            var name = c.ModifiedBy;
+            _logger.LogInformation($"{name}删除承运商数据完成，删除承运商编号为{id}");
+            return dal.DelCarrier(c);
         }
     }
 }

@@ -27,9 +27,9 @@ namespace dal
         }
 
         //修改客户(删除操作)
-        public int DelCustomer(string id)
+        public int DelCustomer(Customer c)
         {
-            string str = $"update Customer set IsDel=1 where CustomerId in ({id})";
+            string str = $"update Customer set IsDel=1, ModifiedBy='{c.ModifiedBy}', ModifiedDate=getdate() where CustomerId in ({c.CustomerId})";
             return DBHelper.ExecuteNonQuery(str);
         }
 
@@ -46,6 +46,13 @@ namespace dal
         {
             string str = $"insert into Customer values('{c.CustomerName}','{c.Address}','{c.Tel}','{c.CarrierPerson}',{c.CarrierLevel},'{c.Email}',0,'{c.Remark}','{c.ModifiedBy}',getdate(),'{c.ModifiedBy}',getdate())";
             return DBHelper.ExecuteNonQuery(str);
+        }
+
+        //查看删除记录
+        public List<Customer> DelShow()
+        {
+            string str = "select * from Customer where IsDel=1";
+            return DBHelper.GetToList<Customer>(str);
         }
     }
 }

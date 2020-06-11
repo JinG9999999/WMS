@@ -103,10 +103,12 @@ namespace WMS_API.Controllers
         //修改客户状态为已删除
         // DELETE api/<CustomerController>/5
         [HttpDelete("{id}")]
-        public int UPT(string id)
+        public int UPT(Customer c)
         {
-            _logger.LogInformation($"删除客户数据完成，删除客户编号为{ id}");
-            return dal.DelCustomer(id);
+            var id = c.CustomerId;
+            var name = c.ModifiedBy;
+            _logger.LogInformation($"{name}删除客户数据完成，删除客户编号为{ id}");
+            return dal.DelCustomer(c);
         }
     }
 }

@@ -102,10 +102,12 @@ namespace WMS_API.Controllers
         //修改供应商状态为已删除
         // DELETE api/<SupplierController>/5
         [HttpDelete("{id}")]
-        public int UPT(string id)
+        public int UPT(Supplier s)
         {
-            _logger.LogInformation($"删除供应商数据完成，删除供应商编号为{ id}");
-            return dal.DelSupplier(id);
+            var id = s.SupplierId;
+            var name = s.ModifiedBy;
+            _logger.LogInformation($"{name}删除供应商数据完成，删除供应商编号为{ id}");
+            return dal.DelSupplier(s);
         }
     }
 }

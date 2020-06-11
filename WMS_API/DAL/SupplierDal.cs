@@ -26,9 +26,9 @@ namespace dal
         }
 
         //修改供应商(删除操作)
-        public int DelSupplier(string id)
+        public int DelSupplier(Supplier s)
         {
-            string str = $"update Supplier set IsDel=1 where SupplierId in ({id})";
+            string str = $"update Supplier set IsDel=1 ,ModifiedBy='{s.ModifiedBy}', ModifiedDate=getdate() where SupplierId in ({s.SupplierId})";
             return DBHelper.ExecuteNonQuery(str);
         }
 
@@ -44,6 +44,13 @@ namespace dal
         {
             string str = $"insert into Supplier values('{s.SupplierName}','{s.Address}','{s.Tel}','{s.SupplierPerson}',{s.SupplierLevel},'{s.Email}',0,'{s.Remark}','{s.ModifiedBy}',getdate(),'{s.ModifiedBy}',getdate())";
             return DBHelper.ExecuteNonQuery(str);
+        }
+
+        //查看删除记录
+        public List<Supplier> DelShow()
+        {
+            string str = "select * from Supplier where IsDel=1";
+            return DBHelper.GetToList<Supplier>(str);
         }
     }
 }
