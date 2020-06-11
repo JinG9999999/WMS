@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\Desktop\\完整版\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj": {}
+    "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\Desktop\\完整版\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj": {
+    "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\完整版\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\完整版\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\完整版\\克隆api - 副本 - 副本\\WMS_API\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\DELL\\Desktop\\完整版\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\DELL\\Desktop\\完整版\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj"
+              "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj"
               }
             }
           }
@@ -45,6 +45,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
             "Microsoft.AspNetCore.Mvc": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -56,6 +60,18 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.0-preview.4.20220.10, )"
+            },
+            "ServiceStack.Redis": {
+              "target": "Package",
+              "version": "[5.9.0, )"
+            },
+            "StackExchange.Redis.Extensions": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[5.0.0-preview.4.20251.6, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -81,14 +97,14 @@
         }
       }
     },
-    "C:\\Users\\DELL\\Desktop\\完整版\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj": {
+    "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\完整版\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\DELL\\Desktop\\完整版\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj",
+        "projectPath": "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\Desktop\\完整版\\克隆api - 副本 - 副本\\WMS_API\\Model\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\Desktop\\WMS仓库管理系统\\克隆api - 副本 - 副本\\WMS_API\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -117,6 +133,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.35, )"
+            },
+            "ServiceStack.Redis": {
+              "target": "Package",
+              "version": "[5.9.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
