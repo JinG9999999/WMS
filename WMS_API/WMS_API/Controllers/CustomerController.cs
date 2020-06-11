@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Model;
 using DAL;
 using dal;
+using Microsoft.Extensions.Logging;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -19,7 +20,12 @@ namespace WMS_API.Controllers
     {
 
         CustomerDal dal = new CustomerDal();
+        private readonly ILogger<Customer> _logger;
 
+        public CustomerController(ILogger<Customer> logger)
+        {
+            _logger = logger;
+        }
         //显示客户
         // GET: api/<CustomerController>
         [HttpGet]
@@ -80,6 +86,7 @@ namespace WMS_API.Controllers
         [HttpPost]
         public int Post(Customer c)
         {
+            _logger.LogInformation(c.ModifiedBy + $"新增客户数据完成，新增客户编号为{ c.CustomerId}");
             return dal.AddCustomer(c);
         }
 
@@ -88,6 +95,7 @@ namespace WMS_API.Controllers
         [HttpPut("{id}")]
         public int Put(Customer c)
         {
+            _logger.LogInformation(c.ModifiedBy + $"修改客户数据完成，修改客户编号为{ c.CustomerId}");
             return dal.UptCustomer(c);
         }
 
@@ -95,9 +103,12 @@ namespace WMS_API.Controllers
         //修改客户状态为已删除
         // DELETE api/<CustomerController>/5
         [HttpDelete("{id}")]
-        public int UPT(string id)
+        public int UPT(Customer c)
         {
-            return dal.DelCustomer(id);
+            var id = c.CustomerId;
+            var name = c.ModifiedBy;
+            _logger.LogInformation($"{name}删除客户数据完成，删除客户编号为{ id}");
+            return dal.DelCustomer(c);
         }
     }
 }

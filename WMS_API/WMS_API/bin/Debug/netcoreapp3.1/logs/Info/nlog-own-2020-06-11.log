@@ -1,0 +1,8 @@
+2020-06-11 09:30:25.1732||INFO|Model.Carrier|新增承运商数据完成，新增承运商编号为0 |url: http://localhost/api/Carrier|action: Post
+2020-06-11 09:39:31.6272||INFO|Model.Carrier|删除承运商数据完成，删除承运商编号为7 |url: http://localhost/api/Carrier/7|action: Upt
+2020-06-11 09:42:11.9949||INFO|Model.Carrier|删除承运商数据完成，删除承运商编号为7 |url: http://localhost/api/Carrier/7|action: Upt
+2020-06-11 09:43:07.8885||INFO|Model.Carrier|删除承运商数据完成，删除承运商编号为7 |url: http://localhost/api/Carrier/7|action: Upt
+2020-06-11 09:51:43.6340||INFO|Model.Supplier|新增供应商数据完成，新增供应商编号为0 |url: http://localhost/api/Supplier|action: Post
+2020-06-11 10:01:59.5422||INFO|Model.Supplier|删除供应商数据完成，删除供应商编号为7 |url: http://localhost/api/Supplier/7|action: UPT
+2020-06-11 10:02:14.6213||INFO|Model.Customer|新增客户数据完成，新增客户编号为0 |url: http://localhost/api/Customer|action: Post
+2020-06-11 10:02:19.8671||INFO|Model.Customer|删除客户数据完成，删除客户编号为7 |url: http://localhost/api/Customer/7|action: UPT
