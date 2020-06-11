@@ -777,3 +777,7 @@ C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\bin\Debug\netcor
 C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
 C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.csproj.CoreCompileInputs.cache
 C:\Users\o\Desktop\实训二项目\Four\WMS API\WMS_API\WMS_API\obj\Debug\netcoreapp3.1\WMS_API.MvcApplicationPartsAssemblyInfo.cache
+D:\大实训2  仓库管理系统\WMS API\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\nlog.config
+D:\大实训2  仓库管理系统\WMS API\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\NLog.dll
+D:\大实训2  仓库管理系统\WMS API\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+D:\大实训2  仓库管理系统\WMS API\WMS_API\WMS_API\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll

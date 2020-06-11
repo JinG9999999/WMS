@@ -15,6 +15,7 @@ namespace Model
         public DateTime CreateDate { get; set; }
         public string ModifiedBy { get; set; }
         public DateTime ModifiedDate { get; set; }
+        public string StorageRackName { get; set; }
     }
     public class PageInventorymove
     {

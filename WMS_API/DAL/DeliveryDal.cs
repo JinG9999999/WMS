@@ -9,13 +9,13 @@ namespace DAL
         //显示库存记录
         public List<Inventoryrecord> InventoryrecordShow()
         {
-            string sql = "select * from Inventoryrecord join Inventory on Inventory.InventoryId = Inventoryrecord.StockInDetailId join Storagerack on Storagerack.ReservoirAreaId = Inventoryrecord.InventoryrecordId";
+            string sql = "select * from Inventoryrecord join Reservoirarea on Inventoryrecord.StockInDetailId = Reservoirarea.ReservoirAreaId";
             return DBHelper.GetToList<Inventoryrecord>(sql);
         }
         //显示发货记录
         public List<Delivery> DeliveryShow()
         {
-            string sql = "select * from Delivery d join Stockout s on d.StockOutId=s.StockOutId join Carrier c on d.CarrierId=c.CarrierId";
+            string sql = "select * from Delivery join Stockout on Delivery.StockOutId = Stockout.StockOutId join Carrier on Delivery.CarrierId = Carrier.CarrierId";
             return DBHelper.GetToList<Delivery>(sql);
         }
         //显示库存移动

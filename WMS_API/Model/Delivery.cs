@@ -16,6 +16,8 @@ namespace Model
         public DateTime ModifiedDate { get; set; }
         public DateTime DeliveryDate { get; set; }
         public string TrackingNo { get; set; }
+        public string CarrierName { get; set; }
+        public string StockOutType { get; set; }
     }
     public class PageDelivery
     {
